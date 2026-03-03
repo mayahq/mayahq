@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-purple: #b026ff;
+  --neon-cyan: #0ff;
+  --neon-green: #00ff00;
+  font-family: var(--font-inter);
+}
+
+@layer base {
+  body {
+    @apply bg-black text-gray-100;
+  }
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 120 100% 19%;
+    --primary-foreground: 120 100% 50%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 120 100% 50%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 120 100% 19%;
+    --primary-foreground: 120 100% 50%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 120 100% 50%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer components {
+  .neon-glow {
+    text-shadow: 0 0 7px var(--neon-purple),
+                 0 0 10px var(--neon-purple),
+                 0 0 21px var(--neon-purple);
+  }
+
+  .neon-box {
+    box-shadow: 0 0 7px var(--neon-purple),
+                0 0 10px var(--neon-purple),
+                0 0 21px var(--neon-purple);
+  }
+
+  .neon-border {
+    border: 1px solid var(--neon-purple);
+    box-shadow: 0 0 5px var(--neon-purple),
+                inset 0 0 5px var(--neon-purple);
+  }
+
+  .neon-hover {
+    transition: all 0.3s ease;
+  }
+
+  .neon-hover:hover {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 7px var(--neon-cyan),
+                 0 0 10px var(--neon-cyan),
+                 0 0 21px var(--neon-cyan);
+    box-shadow: 0 0 7px var(--neon-cyan),
+                0 0 10px var(--neon-cyan),
+                0 0 21px var(--neon-cyan);
+  }
+
+  .link-card {
+    @apply relative overflow-hidden rounded-lg bg-gray-900/50 p-6 transition-all duration-300;
+  }
+
+  .link-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-purple-600/20 to-cyan-600/20 opacity-0 transition-opacity duration-300;
+  }
+
+  .link-card:hover::before {
+    @apply opacity-100;
+  }
+
+  .link-card:hover {
+    @apply transform scale-105;
+  }
+
+  .btn-primary {
+    box-shadow: 0 0 10px hsl(120 100% 50% / 0.3),
+                0 0 20px hsl(120 100% 50% / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} 

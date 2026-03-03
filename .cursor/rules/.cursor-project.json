@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "context": {
+    "autoContext": true,
+    "include": [
+      "README.md",
+      "package.json",
+      "turbo.json",
+      "docs/**/*",
+      "mobile/README.md",
+      "mobile/package.json",
+      "mobile/app.json",
+      "mobile/babel.config.js",
+      "mobile/metro.config.js",
+      "mobile/src/**/*",
+      "mobile/app/**/*",
+      "mobile/components/**/*",
+      "mobile/screens/**/*",
+      "mobile/navigation/**/*",
+      "mobile/services/**/*",
+      "mobile/hooks/**/*",
+      "mobile/types/**/*"
+    ],
+    "exclude": [
+      "**/node_modules/**/*",
+      "**/.git/**/*",
+      "**/.DS_Store",
+      "mobile/.expo/**/*",
+      "mobile/dist/**/*",
+      "mobile/build/**/*",
+      "mobile/ios/build/**/*",
+      "mobile/android/build/**/*",
+      "mobile/android/app/build/**/*",
+      "mobile/web-build/**/*",
+      "mobile/**/__snapshots__/**/*",
+      "mobile/coverage/**/*",
+      "packages/**/dist/**/*",
+      "packages/**/build/**/*",
+      "packages/**/node_modules/**/*",
+      "services/**/dist/**/*",
+      "services/**/build/**/*",
+      "services/**/node_modules/**/*"
+    ]
+  },
+  "run": [
+    {
+      "label": "Start Mobile Dev Server (Expo)",
+      "command": "pnpm start",
+      "cwd": "./mobile",
+      "description": "Runs the Expo development server for the mobile app."
+    },
+    {
+      "label": "Install Mobile Dependencies",
+      "command": "pnpm install",
+      "cwd": "./mobile",
+      "description": "Installs dependencies for the mobile app."
+    },
+    {
+      "label": "Lint Mobile App",
+      "command": "pnpm lint",
+      "cwd": "./mobile",
+      "description": "Lints the mobile app codebase."
+    },
+    {
+      "label": "Test Mobile App",
+      "command": "pnpm test",
+      "cwd": "./mobile",
+      "description": "Runs tests for the mobile app."
+    },
+    {
+      "label": "Install Root Dependencies",
+      "command": "pnpm install",
+      "cwd": ".",
+      "description": "Installs dependencies for the entire monorepo."
+    }
+  ],
+  "docs": [
+    {
+      "label": "React Native Docs",
+      "url": "https://reactnative.dev/docs/getting-started"
+    },
+    {
+      "label": "Expo Docs",
+      "url": "https://docs.expo.dev/"
+    },
+    {
+      "label": "React Navigation Docs",
+      "url": "https://reactnavigation.org/docs/getting-started"
+    }
+  ]
+}

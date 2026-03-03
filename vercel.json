@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "workspaceRoot": "website",
+  "installCommand": "cd .. && pnpm install --no-frozen-lockfile && cd website",
+  "buildCommand": "pnpm next build",
+  "outputDirectory": ".next"
+} 

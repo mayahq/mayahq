@@ -1,0 +1,31 @@
+{
+  "name": "@mayahq/chat-sdk",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@mayahq/supabase-client": "*",
+    "cross-fetch": "^4.0.0",
+    "uuid": "^9.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0"
+  },
+  "peerDependenciesMeta": {
+    "react-native": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "eslint": "^8.44.0",
+    "@types/react": "^18.0.0",
+    "@types/uuid": "^9.0.0"
+  }
+} 

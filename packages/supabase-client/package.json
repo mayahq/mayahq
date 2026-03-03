@@ -1,0 +1,42 @@
+{
+  "name": "@mayahq/supabase-client",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.36.0",
+    "@supabase/ssr": "^0.0.10",
+    "@supabase/storage-js": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.4",
+    "typescript": "^5.0.0",
+    "eslint": "^8.44.0",
+    "supabase": "^1.150.0"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.64.0"
+  },
+  "peerDependenciesMeta": {
+    "react-native": {
+      "optional": true
+    }
+  },
+  "files": [
+    "dist",
+    "migrations"
+  ],
+  "description": "A unified Supabase client for MayaHQ's web and mobile applications",
+  "keywords": [
+    "supabase",
+    "maya",
+    "chat",
+    "cross-platform"
+  ]
+} 

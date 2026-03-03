@@ -1,0 +1,108 @@
+{
+  "cli": {
+    "version": ">= 5.9.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      },
+      "channel": "development",
+      "env": {
+        "EXPO_PUBLIC_UPDATE_URL": "https://u.expo.dev/af3cdfb9-6201-4f50-9070-b2125e0e7213"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "channel": "preview",
+      "env": {
+        "EXPO_PUBLIC_UPDATE_URL": "https://u.expo.dev/af3cdfb9-6201-4f50-9070-b2125e0e7213"
+      }
+    },
+    "development-build": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "channel": "development",
+      "env": {
+        "EXPO_PUBLIC_UPDATE_URL": "https://u.expo.dev/af3cdfb9-6201-4f50-9070-b2125e0e7213"
+      }
+    },
+    "ios-device": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": false
+      },
+      "channel": "development",
+      "env": {
+        "EXPO_PUBLIC_UPDATE_URL": "https://u.expo.dev/af3cdfb9-6201-4f50-9070-b2125e0e7213"
+      }
+    },
+    "local-device": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": false
+      },
+      "autoIncrement": true,
+      "channel": "development",
+      "env": {
+        "EXPO_PUBLIC_UPDATE_URL": "https://u.expo.dev/af3cdfb9-6201-4f50-9070-b2125e0e7213"
+      }
+    },
+    "android-apk": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "credentialsSource": "remote",
+      "channel": "preview",
+      "env": {
+        "EXPO_PUBLIC_UPDATE_URL": "https://u.expo.dev/af3cdfb9-6201-4f50-9070-b2125e0e7213"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "distribution": "internal",
+      "environment": "preview",
+      "node": "20.19.0",
+      "ios": {
+        "resourceClass": "m-medium",
+        "buildConfiguration": "Release"
+      },
+      "channel": "production",
+      "env": {
+        "EXPO_PUBLIC_UPDATE_URL": "https://u.expo.dev/af3cdfb9-6201-4f50-9070-b2125e0e7213",
+        "EAS_BUILD_WORKINGDIR": "mobile",
+        "EXPO_PUBLIC_SUPABASE_URL": "https://dlaczmexhnoxfggpzxkl.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRsYWN6bWV4aG5veGZnZ3B6eGtsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU1NDAzMzcsImV4cCI6MjA3MTExNjMzN30.8Sf7ZS5hsckYg0BtN8j3wJImpIfhGW_XwuMTQv7YLLI"
+      },
+      "cache": {
+        "disabled": true
+      }
+    },
+    "ios-standalone": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": false,
+        "buildConfiguration": "Release"
+      },
+      "channel": "production",
+      "env": {
+        "EXPO_PUBLIC_UPDATE_URL": "https://u.expo.dev/af3cdfb9-6201-4f50-9070-b2125e0e7213"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

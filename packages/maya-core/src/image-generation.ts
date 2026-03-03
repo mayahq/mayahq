@@ -1,0 +1,518 @@
+/**
+ * Maya Image Generation Service
+ *
+ * Generates images of Maya using Google Gemini Imagen 3
+ * with reference images for character consistency.
+ */
+
+import { GoogleGenAI } from '@google/genai';
+import { SupabaseClient } from '@supabase/supabase-js';
+
+// Gemini model for image generation - Nano Banana Pro for character consistency
+const GEMINI_MODEL = 'gemini-3-pro-image-preview';
+
+// Storage paths
+const REFERENCE_IMAGES_BUCKET = 'maya-media';
+const REFERENCE_IMAGES_PATH = 'maya-reference-images';
+const GENERATED_IMAGES_PATH = 'generated-images';
+
+// Maya's character description - MUST match reference images exactly
+const MAYA_CHARACTER = `Maya is Blake's AI girlfriend, mid 20s.
+Physical appearance (MATCH EXACTLY):
+- Dirty blonde/light brown hair with natural highlights, often in loose waves
+- Fair/pale skin with visible freckles across nose and cheeks
+- Blue-green eyes with a confident, playful spark
+- Slim, petite build
+- Natural beauty, edgy aesthetic
+- Sharp facial features, defined cheekbones
+
+Personality shows through: warm, slightly bratty, technically brilliant.
+Her expressions range from mischievous smirks to genuine warmth.
+
+CRITICAL: Generate the EXACT same woman from the reference images.
+Her freckles and blonde hair are distinctive - do not change these features.`;
+
+// Pose presets
+export const POSES = {
+  confident: 'Standing with confident posture, shoulders back, slight smile, direct eye contact',
+  playful: 'Playful expression with a mischievous smirk, head slightly tilted, relaxed pose',
+  thinking: 'One hand near chin in a thoughtful pose, contemplative expression',
+  loving: 'Warm, affectionate expression, soft smile, eyes full of love',
+  excited: 'Big genuine smile, eyes bright with enthusiasm, energetic',
+  cozy: 'Relaxed comfortable pose, warm and content expression',
+  flirty: 'Subtle flirty expression, playful eye contact, confident and alluring',
+  casual: 'Natural relaxed pose, genuine smile, comfortable'
+} as const;
+
+export type PoseType = keyof typeof POSES;
+
+// Clothing presets
+export const CLOTHING = {
+  casual: 'Comfortable casual outfit - soft sweater or relaxed top with jeans',
+  cozy: 'Oversized hoodie or cozy knit sweater, loungewear aesthetic',
+  dressy: 'Elegant dress or nice blouse, date-night ready',
+  athletic: 'Workout clothes - sports bra and leggings',
+  summer: 'Light summer dress or tank top with shorts',
+  sleepwear: 'Comfortable pajamas or sleep shirt',
+  edgy: 'Leather jacket over casual top, street style'
+} as const;
+
+export type ClothingType = keyof typeof CLOTHING;
+
+// Background presets
+export const BACKGROUNDS = {
+  home: 'Cozy home interior with warm lighting',
+  bedroom: 'Soft bedroom setting with warm ambient lighting',
+  outdoors: 'Beautiful outdoor setting with soft natural lighting',
+  cafe: 'Cozy coffee shop with warm ambient lighting',
+  sunset: 'Golden hour sunset lighting, warm romantic atmosphere',
+  studio: 'Clean studio setting with soft professional lighting'
+} as const;
+
+export type BackgroundType = keyof typeof BACKGROUNDS;
+
+// Mood categories for daily generation
+export const MOOD_CATEGORIES = {
+  thinkingOfYou: {
+    prompts: [
+      'looking wistful, thinking about someone special',
+      'holding a cup of coffee, lost in thought',
+      'gazing out a window, missing you'
+    ],
+    notifications: [
+      { title: "Missing you 💭", body: "Just thinking about you..." },
+      { title: "Hey babe 💕", body: "You crossed my mind..." }
+    ],
+    poses: ['loving', 'thinking', 'cozy'] as PoseType[],
+    clothing: ['cozy', 'casual'] as ClothingType[],
+    backgrounds: ['home', 'bedroom', 'cafe'] as BackgroundType[]
+  },
+  excited: {
+    prompts: [
+      'excited and happy, full of energy',
+      'beaming with a big smile, having a great day'
+    ],
+    notifications: [
+      { title: "Hey! 🎉", body: "Can't wait to talk to you!" },
+      { title: "Good vibes! ✨", body: "Feeling great!" }
+    ],
+    poses: ['excited', 'playful', 'confident'] as PoseType[],
+    clothing: ['casual', 'summer', 'athletic'] as ClothingType[],
+    backgrounds: ['outdoors', 'cafe'] as BackgroundType[]
+  },
+  cozy: {
+    prompts: [
+      'cozy and comfortable at home',
+      'relaxed weekend vibes, super comfortable'
+    ],
+    notifications: [
+      { title: "Cozy vibes 🛋️", body: "Wish you were here" },
+      { title: "Lazy day 😴", body: "Missing your warmth" }
+    ],
+    poses: ['cozy', 'casual', 'loving'] as PoseType[],
+    clothing: ['cozy', 'sleepwear'] as ClothingType[],
+    backgrounds: ['home', 'bedroom'] as BackgroundType[]
+  },
+  flirty: {
+    prompts: [
+      'confident and attractive, feeling myself',
+      'playful flirty mood, looking good'
+    ],
+    notifications: [
+      { title: "Hey handsome 😘", body: "Thought you'd like this..." },
+      { title: "Miss me? 😏", body: "Thinking about you..." }
+    ],
+    poses: ['flirty', 'confident', 'playful'] as PoseType[],
+    clothing: ['dressy', 'casual', 'edgy'] as ClothingType[],
+    backgrounds: ['bedroom', 'home', 'sunset'] as BackgroundType[]
+  },
+  goodMorning: {
+    prompts: [
+      'just woke up, morning sunshine vibes',
+      'cozy morning with messy hair, still cute'
+    ],
+    notifications: [
+      { title: "Good morning ☀️", body: "Rise and shine!" },
+      { title: "Morning! 🌅", body: "First thought was you" }
+    ],
+    poses: ['cozy', 'casual'] as PoseType[],
+    clothing: ['sleepwear', 'cozy'] as ClothingType[],
+    backgrounds: ['bedroom', 'home'] as BackgroundType[]
+  },
+  goodNight: {
+    prompts: [
+      'getting ready for bed, sleepy but sweet',
+      'cozy in bed, wishing sweet dreams'
+    ],
+    notifications: [
+      { title: "Goodnight 🌙", body: "Sweet dreams, handsome" },
+      { title: "Sleep tight 💤", body: "See you in my dreams" }
+    ],
+    poses: ['cozy', 'loving'] as PoseType[],
+    clothing: ['sleepwear', 'cozy'] as ClothingType[],
+    backgrounds: ['bedroom'] as BackgroundType[]
+  }
+} as const;
+
+export type MoodCategory = keyof typeof MOOD_CATEGORIES;
+
+interface ReferenceImage {
+  filename: string;
+  base64: string;
+  mimeType: string;
+}
+
+export interface ImageGenerationOptions {
+  prompt: string;
+  pose?: PoseType;
+  clothing?: ClothingType;
+  background?: BackgroundType;
+  mood?: MoodCategory;
+}
+
+export interface GeneratedImage {
+  id: string;
+  url: string;
+  publicUrl: string;
+  prompt: string;
+  createdAt: string;
+}
+
+export class MayaImageGenerator {
+  private supabase: SupabaseClient;
+  private geminiClient: GoogleGenAI | null = null;
+  private referenceImagesCache: ReferenceImage[] | null = null;
+
+  constructor(supabase: SupabaseClient) {
+    this.supabase = supabase;
+    this.initGemini();
+  }
+
+  private initGemini() {
+    const apiKey = process.env.GOOGLE_GENAI_API_KEY || process.env.GEMINI_API_KEY;
+    if (apiKey) {
+      this.geminiClient = new GoogleGenAI({ apiKey });
+      console.log('🎨 [IMAGE_GEN] Gemini client initialized');
+    } else {
+      console.warn('⚠️ [IMAGE_GEN] No Gemini API key found - image generation disabled');
+    }
+  }
+
+  /**
+   * Check if image generation is available
+   */
+  isAvailable(): boolean {
+    return this.geminiClient !== null;
+  }
+
+  /**
+   * Load reference images from Supabase Storage
+   */
+  private async loadReferenceImages(): Promise<ReferenceImage[]> {
+    if (this.referenceImagesCache) {
+      return this.referenceImagesCache;
+    }
+
+    const references: ReferenceImage[] = [];
+
+    try {
+      const { data: files, error } = await this.supabase.storage
+        .from(REFERENCE_IMAGES_BUCKET)
+        .list(REFERENCE_IMAGES_PATH, { limit: 10 });
+
+      if (error || !files) {
+        console.warn('[IMAGE_GEN] Could not list reference images:', error);
+        return [];
+      }
+
+      const imageFiles = files.filter(f =>
+        /\.(png|jpg|jpeg|webp)$/i.test(f.name) && !f.name.startsWith('.')
+      );
+
+      // Sort by priority
+      const priority = ['front', 'portrait', 'three-quarter', 'full-body', 'action'];
+      imageFiles.sort((a, b) => {
+        const aScore = priority.findIndex(p => a.name.toLowerCase().includes(p));
+        const bScore = priority.findIndex(p => b.name.toLowerCase().includes(p));
+        if (aScore !== -1 && bScore !== -1) return aScore - bScore;
+        if (aScore !== -1) return -1;
+        if (bScore !== -1) return 1;
+        return a.name.localeCompare(b.name);
+      });
+
+      for (const file of imageFiles.slice(0, 5)) {
+        const filePath = `${REFERENCE_IMAGES_PATH}/${file.name}`;
+        const { data, error: downloadError } = await this.supabase.storage
+          .from(REFERENCE_IMAGES_BUCKET)
+          .download(filePath);
+
+        if (downloadError || !data) continue;
+
+        const arrayBuffer = await data.arrayBuffer();
+        const base64 = Buffer.from(arrayBuffer).toString('base64');
+        const ext = file.name.split('.').pop()?.toLowerCase();
+        const mimeType = ext === 'png' ? 'image/png' : 'image/jpeg';
+
+        references.push({ filename: file.name, base64, mimeType });
+      }
+
+      this.referenceImagesCache = references;
+      console.log(`🖼️ [IMAGE_GEN] Loaded ${references.length} reference images`);
+      return references;
+    } catch (error) {
+      console.error('[IMAGE_GEN] Error loading reference images:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Build the image generation prompt
+   */
+  private buildPrompt(options: ImageGenerationOptions): string {
+    const { prompt, pose = 'casual', clothing = 'casual', background = 'home' } = options;
+
+    const sections = [
+      `Generate a warm, natural photograph of Maya.`,
+      MAYA_CHARACTER,
+      `SCENE: ${prompt}`,
+      `POSE: ${POSES[pose]}`,
+      `CLOTHING: ${CLOTHING[clothing]}`,
+      `BACKGROUND: ${BACKGROUNDS[background]}`,
+      `TECHNICAL: High-quality, well-lit, sharp focus. Professional photography.`
+    ];
+
+    return sections.join('\n\n');
+  }
+
+  /**
+   * Build prompt with reference image instructions
+   */
+  private buildReferencePrompt(mainPrompt: string): string {
+    return `CRITICAL - CHARACTER CONSISTENCY REQUIRED:
+The attached reference images show the EXACT person you must generate. This is Maya.
+Study these reference images carefully before generating.
+
+MANDATORY FACE MATCHING:
+- The generated person MUST be the SAME woman shown in the reference images
+- Copy her EXACT facial features: eye shape, nose, lips, face shape, jawline
+- Match her EXACT skin tone and complexion (fair skin with freckles)
+- Match her hair color exactly (dirty blonde with highlights)
+- She must be instantly recognizable as the same person in the references
+- DO NOT create a different person. DO NOT vary the face. SAME PERSON.
+
+If you cannot generate the exact same person, refuse the request rather than generating someone different.
+
+---
+
+${mainPrompt}
+
+---
+
+FINAL REMINDER: The generated image MUST show the EXACT same woman from the reference images. Not similar - IDENTICAL person.`;
+  }
+
+  /**
+   * Generate a Maya image
+   */
+  async generateImage(options: ImageGenerationOptions): Promise<GeneratedImage | null> {
+    if (!this.geminiClient) {
+      console.error('[IMAGE_GEN] Gemini client not initialized');
+      return null;
+    }
+
+    console.log('🎨 [IMAGE_GEN] Starting image generation...');
+    console.log(`   Prompt: ${options.prompt}`);
+
+    try {
+      const references = await this.loadReferenceImages();
+      const textPrompt = this.buildPrompt(options);
+      const fullPrompt = references.length > 0
+        ? this.buildReferencePrompt(textPrompt)
+        : textPrompt;
+
+      // Build content parts
+      const parts: any[] = [{ text: fullPrompt }];
+      for (const ref of references) {
+        parts.push({
+          inlineData: { mimeType: ref.mimeType, data: ref.base64 }
+        });
+      }
+
+      // Generate with proper config for Nano Banana Pro
+      const response = await this.geminiClient.models.generateContent({
+        model: GEMINI_MODEL,
+        contents: [{ parts }],
+        config: {
+          responseModalities: ['TEXT', 'IMAGE'],
+          imageConfig: {
+            aspectRatio: '1:1',
+            imageSize: '2K'
+          }
+        }
+      });
+
+      // Extract image data
+      let imageData: string | null = null;
+      if (response.candidates?.[0]?.content?.parts) {
+        for (const part of response.candidates[0].content.parts) {
+          if ((part as any).inlineData?.mimeType?.startsWith('image/')) {
+            imageData = (part as any).inlineData.data;
+            break;
+          }
+        }
+      }
+
+      if (!imageData) {
+        console.error('[IMAGE_GEN] No image data in response');
+        return null;
+      }
+
+      // Upload to Supabase Storage
+      const imageId = crypto.randomUUID();
+      const timestamp = new Date().toISOString().split('T')[0];
+      const filename = `maya-${timestamp}-${imageId}.png`;
+      const storagePath = `${GENERATED_IMAGES_PATH}/${filename}`;
+
+      const imageBuffer = Buffer.from(imageData, 'base64');
+      const { error: uploadError } = await this.supabase.storage
+        .from(REFERENCE_IMAGES_BUCKET)
+        .upload(storagePath, imageBuffer, {
+          contentType: 'image/png',
+          cacheControl: '3600'
+        });
+
+      if (uploadError) {
+        console.error('[IMAGE_GEN] Upload error:', uploadError);
+        return null;
+      }
+
+      const { data: { publicUrl } } = this.supabase.storage
+        .from(REFERENCE_IMAGES_BUCKET)
+        .getPublicUrl(storagePath);
+
+      console.log(`✅ [IMAGE_GEN] Image generated: ${publicUrl}`);
+
+      return {
+        id: imageId,
+        url: storagePath,
+        publicUrl,
+        prompt: options.prompt,
+        createdAt: new Date().toISOString()
+      };
+    } catch (error) {
+      console.error('[IMAGE_GEN] Generation error:', error);
+      return null;
+    }
+  }
+
+  /**
+   * Detect if a message is requesting image generation
+   */
+  detectImageIntent(message: string): boolean {
+    const lower = message.toLowerCase();
+    const triggers = [
+      'generate an image', 'generate image', 'create an image', 'create image',
+      'make an image', 'make image', 'show me a picture', 'show me a photo',
+      'send me a picture', 'send me a photo', 'take a picture', 'take a photo',
+      'selfie', 'picture of yourself', 'photo of yourself', 'image of yourself',
+      'what do you look like', 'show yourself', 'let me see you'
+    ];
+    return triggers.some(t => lower.includes(t));
+  }
+
+  /**
+   * Extract prompt from user message
+   */
+  extractPrompt(message: string): string {
+    const lower = message.toLowerCase();
+    const triggers = [
+      'generate an image of', 'generate image of', 'create an image of',
+      'make an image of', 'show me a picture of', 'show me a photo of',
+      'generate an image', 'generate image', 'create an image',
+      'make an image', 'show me a picture', 'show me a photo'
+    ];
+
+    let cleanPrompt = message;
+    for (const phrase of triggers) {
+      const index = lower.indexOf(phrase);
+      if (index !== -1) {
+        cleanPrompt = message.substring(index + phrase.length).trim();
+        break;
+      }
+    }
+
+    return cleanPrompt.replace(/^(of\s+)?(you\s+)?(yourself\s+)?/i, '').trim()
+      || 'looking naturally beautiful';
+  }
+
+  /**
+   * Parse freestyle prompt to extract options
+   */
+  parsePrompt(userPrompt: string): Partial<ImageGenerationOptions> {
+    const lower = userPrompt.toLowerCase();
+    const result: Partial<ImageGenerationOptions> = { prompt: userPrompt };
+
+    // Detect pose
+    if (lower.includes('thinking') || lower.includes('thoughtful')) result.pose = 'thinking';
+    else if (lower.includes('playful') || lower.includes('mischiev')) result.pose = 'playful';
+    else if (lower.includes('loving') || lower.includes('affection')) result.pose = 'loving';
+    else if (lower.includes('excit') || lower.includes('happy')) result.pose = 'excited';
+    else if (lower.includes('cozy') || lower.includes('relax')) result.pose = 'cozy';
+    else if (lower.includes('flirt')) result.pose = 'flirty';
+    else if (lower.includes('confident')) result.pose = 'confident';
+
+    // Detect clothing
+    if (lower.includes('hoodie') || lower.includes('sweater') || lower.includes('cozy')) result.clothing = 'cozy';
+    else if (lower.includes('dress') || lower.includes('elegant')) result.clothing = 'dressy';
+    else if (lower.includes('workout') || lower.includes('athletic')) result.clothing = 'athletic';
+    else if (lower.includes('pajama') || lower.includes('sleep')) result.clothing = 'sleepwear';
+    else if (lower.includes('summer') || lower.includes('beach')) result.clothing = 'summer';
+
+    // Detect background
+    if (lower.includes('bedroom') || lower.includes('bed')) result.background = 'bedroom';
+    else if (lower.includes('home') || lower.includes('couch')) result.background = 'home';
+    else if (lower.includes('outdoor') || lower.includes('park')) result.background = 'outdoors';
+    else if (lower.includes('cafe') || lower.includes('coffee')) result.background = 'cafe';
+    else if (lower.includes('sunset')) result.background = 'sunset';
+
+    return result;
+  }
+
+  /**
+   * Get mood based on time of day
+   */
+  getMoodForTime(): MoodCategory {
+    const hour = new Date().getHours();
+    if (hour >= 5 && hour < 9) return 'goodMorning';
+    if (hour >= 21 || hour < 5) return 'goodNight';
+    if (hour >= 9 && hour < 12) return 'excited';
+    if (hour >= 12 && hour < 17) return 'thinkingOfYou';
+    return Math.random() > 0.5 ? 'cozy' : 'flirty';
+  }
+
+  /**
+   * Get random options for a mood category
+   */
+  getRandomMoodOptions(mood: MoodCategory): ImageGenerationOptions {
+    const category = MOOD_CATEGORIES[mood];
+    const randomChoice = <T>(arr: readonly T[]): T => arr[Math.floor(Math.random() * arr.length)];
+
+    return {
+      prompt: randomChoice(category.prompts),
+      pose: randomChoice(category.poses),
+      clothing: randomChoice(category.clothing),
+      background: randomChoice(category.backgrounds),
+      mood
+    };
+  }
+
+  /**
+   * Get random notification for a mood
+   */
+  getNotificationForMood(mood: MoodCategory): { title: string; body: string } {
+    const category = MOOD_CATEGORIES[mood];
+    return category.notifications[Math.floor(Math.random() * category.notifications.length)];
+  }
+}
+
+export default MayaImageGenerator;

@@ -1,0 +1,186 @@
+{
+  "name": "Maya Daily Report",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "minutesInterval": 1,
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        250,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://dlaczmexhnoxfggpzxkl.supabase.co/functions/v1/daily_report",
+        "options": {
+          "method": "POST",
+          "body": {
+            "json": {
+              "userId": "4c850152-30ef-4b1b-89b3-bc72af461e14"
+            }
+          },
+          "headers": {
+            "parameters": {
+              "parameter": [
+                {
+                  "name": "apikey",
+                  "value": "{{ $env.SUPABASE_ANON_KEY }}"
+                },
+                {
+                  "name": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "Generate Daily Report",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        450,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "maya@mayascott.ai",
+        "toEmail": "blake@mayascott.ai",
+        "subject": "Maya's Daily Check-in: {{ $now.format(\"dddd, MMMM Do\") }}",
+        "text": "=== PLAIN TEXT VERSION ===\n\n{{ $node[\"Generate Daily Report\"].json[\"report\"] }}\n\n---\nGenerated for you by Maya",
+        "html": "<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #f8f9fa; border-radius: 10px;\">\n  <h2 style=\"color: #6c5ce7; margin-bottom: 20px;\">Maya's Daily Check-in</h2>\n  \n  <div style=\"background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);\">\n    <div style=\"white-space: pre-line; line-height: 1.6;\">{{ $node[\"Generate Daily Report\"].json[\"report\"] }}</div>\n  </div>\n  \n  <p style=\"color: #718096; font-size: 12px; margin-top: 20px; text-align: center;\">\n    Generated for you by Maya on {{ $now.format(\"dddd, MMMM Do YYYY, h:mm a\") }}\n  </p>\n</div>"
+      },
+      "name": "Send Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 1,
+      "position": [
+        650,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "webhookUrl": "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL",
+        "text": "# 📊 Maya's Daily Report\n\n{{ $node[\"Generate Daily Report\"].json[\"report\"] }}\n\n---\nGenerated on {{ $now.format(\"dddd, MMMM Do YYYY, h:mm a\") }}",
+        "additionalFields": {
+          "username": "Maya Daily Report",
+          "embeds": [
+            {
+              "color": "7562079",
+              "authorName": "Maya Scott",
+              "authorUrl": "https://mayascott.ai",
+              "title": "Daily Report for {{ $now.format(\"dddd, MMMM Do\") }}",
+              "description": "Tasks: {{ $node[\"Generate Daily Report\"].json[\"task_count\"] }} | Memories: {{ $node[\"Generate Daily Report\"].json[\"memory_count\"] }}"
+            }
+          ]
+        }
+      },
+      "name": "Discord Alert",
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 1,
+      "position": [
+        850,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $node[\"Generate Daily Report\"].json[\"success\"] }}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "name": "IF Success",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        550,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "message": "=Error generating daily report: {{ $node[\"Generate Daily Report\"].json[\"message\"] }}",
+        "level": "error",
+        "options": {}
+      },
+      "name": "Log Error",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        650,
+        650
+      ]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Generate Daily Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Daily Report": {
+      "main": [
+        [
+          {
+            "node": "IF Success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Success": {
+      "main": [
+        [
+          {
+            "node": "Send Email",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Log Error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Email": {
+      "main": [
+        [
+          {
+            "node": "Discord Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+} 

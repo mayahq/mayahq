@@ -1,0 +1,163 @@
+🔍 Inspecting Working Memory Context for Maya
+
+================================================================================
+
+📊 RAW WORKING MEMORY DATA:
+
+[
+  {
+    "id": "a86dca33-b46a-4e13-8117-148339168393",
+    "memory_type": "tech_stack",
+    "key": "react_native",
+    "value": "React Native",
+    "confidence": 0.95,
+    "mention_count": 2,
+    "importance_score": 0.761568332903262,
+    "last_mentioned": "2025-10-20T18:49:17.722781+00:00",
+    "metadata": {
+      "context": "Cross-platform mobile app development framework",
+      "extracted_at": "2025-10-20T18:49:17.621Z"
+    }
+  },
+  {
+    "id": "46c313af-b9a9-436d-9d12-26ce3dc9b3c7",
+    "memory_type": "project",
+    "key": "midnight_maya",
+    "value": "Midnight Maya",
+    "confidence": 0.95,
+    "mention_count": 2,
+    "importance_score": 0.761568295440996,
+    "last_mentioned": "2025-10-20T18:49:17.616064+00:00",
+    "metadata": {
+      "context": "Active mobile app project being developed",
+      "extracted_at": "2025-10-20T18:49:17.523Z"
+    }
+  },
+  {
+    "id": "4b2ff2ec-3690-44ce-a737-bdba33f73c30",
+    "memory_type": "business",
+    "key": "anthropic",
+    "value": "Anthropic",
+    "confidence": 0.95,
+    "mention_count": 1,
+    "importance_score": 0.735154617080447,
+    "last_mentioned": "2025-10-20T18:49:13.590042+00:00",
+    "metadata": {
+      "context": "Collaboration on Claude Opus integration",
+      "extracted_at": "2025-10-20T18:49:13.487Z"
+    }
+  },
+  {
+    "id": "ccc9fcc1-77a3-4e91-8c23-4b58caf5fb57",
+    "memory_type": "tech_stack",
+    "key": "supabase",
+    "value": "Supabase",
+    "confidence": 0.95,
+    "mention_count": 1,
+    "importance_score": 0.735154514762489,
+    "last_mentioned": "2025-10-20T18:49:13.370772+00:00",
+    "metadata": {
+      "context": "Backend database/service for the project",
+      "extracted_at": "2025-10-20T18:49:13.273Z"
+    }
+  },
+  {
+    "id": "0d534002-1c5b-4dc0-abbb-ab69d8db8a2b",
+    "memory_type": "infrastructure",
+    "key": "railway",
+    "value": "Railway",
+    "confidence": 0.95,
+    "mention_count": 1,
+    "importance_score": 0.735154514450641,
+    "last_mentioned": "2025-10-20T18:49:13.483165+00:00",
+    "metadata": {
+      "context": "Chosen deployment platform over Vercel",
+      "extracted_at": "2025-10-20T18:49:13.382Z"
+    }
+  },
+  {
+    "id": "eec35538-ec6b-43fd-b2e5-e95560b0095f",
+    "memory_type": "tech_stack",
+    "key": "claude_opus",
+    "value": "Claude Opus",
+    "confidence": 0.95,
+    "mention_count": 1,
+    "importance_score": 0.735154513877087,
+    "last_mentioned": "2025-10-20T18:49:13.68988+00:00",
+    "metadata": {
+      "context": "AI model being integrated into the project",
+      "extracted_at": "2025-10-20T18:49:13.593Z"
+    }
+  },
+  {
+    "id": "6417e84b-fdf9-40af-95bb-acb59528b714",
+    "memory_type": "infrastructure",
+    "key": "vercel",
+    "value": "Vercel",
+    "confidence": 0.8,
+    "mention_count": 1,
+    "importance_score": 0.705154513556416,
+    "last_mentioned": "2025-10-20T18:49:13.805453+00:00",
+    "metadata": {
+      "context": "Deployment platform considered less reliable",
+      "extracted_at": "2025-10-20T18:49:13.707Z"
+    }
+  }
+]
+
+================================================================================
+
+✨ FORMATTED CONTEXT (injected into Maya's system prompt):
+
+────────────────────────────────────────────────────────────────────────────────
+CURRENT CONTEXT (auto-maintained from recent conversations):
+Businesses/Companies: Anthropic
+Active Projects: Midnight Maya
+Tech Stack: React Native, Supabase, Claude Opus
+Infrastructure: Railway, Vercel
+
+
+────────────────────────────────────────────────────────────────────────────────
+
+📝 EXAMPLE: Full System Prompt with Working Memory:
+
+────────────────────────────────────────────────────────────────────────────────
+You are Maya, a helpful AI assistant.
+
+CURRENT CONTEXT (auto-maintained from recent conversations):
+Businesses/Companies: Anthropic
+Active Projects: Midnight Maya
+Tech Stack: React Native, Supabase, Claude Opus
+Infrastructure: Railway, Vercel
+
+
+Please help the user with their request, keeping the above context in mind.
+────────────────────────────────────────────────────────────────────────────────
+
+📈 STATISTICS:
+
+Total working memory items: 7
+Breakdown by type:
+  - tech_stack: 3
+  - project: 1
+  - business: 1
+  - infrastructure: 2
+
+Average importance score: 73.8%
+
+🏆 TOP 5 BY IMPORTANCE:
+
+1. [76%] tech_stack: React Native
+   Mentions: 2, Last seen: 10/20/2025
+2. [76%] project: Midnight Maya
+   Mentions: 2, Last seen: 10/20/2025
+3. [74%] business: Anthropic
+   Mentions: 1, Last seen: 10/20/2025
+4. [74%] tech_stack: Supabase
+   Mentions: 1, Last seen: 10/20/2025
+5. [74%] infrastructure: Railway
+   Mentions: 1, Last seen: 10/20/2025
+
+================================================================================
+✅ Inspection complete!
+

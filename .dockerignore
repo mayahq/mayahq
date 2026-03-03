@@ -1,0 +1,25 @@
+node_modules
+*/node_modules
+**/node_modules
+.git
+.gitignore
+README.md
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+# NOTE: dist/ folders are NOT excluded - we need the built files for deployment
+coverage
+.nyc_output
+.cache
+.parcel-cache
+.next
+.nuxt
+.vuepress/dist
+.serverless
+.fusebox/
+.dynamodb/
+.tern-port 

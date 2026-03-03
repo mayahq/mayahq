@@ -1,0 +1,44 @@
+
+> @mayahq/memory-worker@0.1.0 dev
+> NODE_ENV=development ts-node -r dotenv/config src/index.ts
+
+Initializing Cohere embeddings with API key: 072Z...cB0V
+Starting memory queue processor with 5s interval
+Processing memory ingestion queue...
+Memory queue processor started with 5s interval
+Starting memory worker...
+Environment: {
+  SUPABASE_URL: '✅',
+  SUPABASE_SERVICE_ROLE_KEY: '✅',
+  MAYA_SYSTEM_USER_ID: '✅',
+  MEMORY_PROCESSING_ENABLED: '✅',
+  RESPONSE_GENERATION_ENABLED: '✅',
+  QUEUE_PROCESSING_ENABLED: '✅',
+  QUEUE_PROCESSING_INTERVAL: '5s'
+}
+(node:42233) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (/Users/blakeurmos/GitHub/mayahq/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/blakeurmos/GitHub/mayahq/packages/memory-worker/src/index.ts:420:5)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Module.m._compile (/Users/blakeurmos/GitHub/mayahq/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1698:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/blakeurmos/GitHub/mayahq/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1303:32) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3002
+}
+npm error Lifecycle script `dev` failed with error:
+npm error code 1
+npm error path /Users/blakeurmos/GitHub/mayahq/packages/memory-worker
+npm error workspace @mayahq/memory-worker@0.1.0
+npm error location /Users/blakeurmos/GitHub/mayahq/packages/memory-worker
+npm error command failed
+npm error command sh -c NODE_ENV=development ts-node -r dotenv/config src/index.ts

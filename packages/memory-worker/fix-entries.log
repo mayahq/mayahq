@@ -1,0 +1,975 @@
+=== Fix Blank Entries Script Started ===
+[Fix Blank Entries] Searching for blank/malformed entries...
+[Fix Blank Entries] Found 78 blank entries out of 78 total
+[Fix Blank Entries] Processing 20 entries...
+
+[Fix Blank Entries] [1/20] Processing item 2c76f31e-cfea-46a8-954f-e290311cfbf4
+[Fix Blank Entries] Title: "Trellis AI (YC W24) Is Hiring: Streamline access to life-saving therapies"
+[Content Processor] Processing: "Trellis AI (YC W24) Is Hiring: Streamline access to life-saving therapies"
+[Variety Engine] Selected style: skeptical_question (recent: 1/8)
+[Content Processor] Using style: skeptical_question
+[Content Processor] Prompt preview: Article: "Trellis AI (YC W24) Is Hiring: Streamline access to life-saving therapies"
+URL: https://ww...
+[Content Processor] Generated: ""Streamline access to life-saving therapies" is such vague YC-speak it hurts - are you actually fixing prior auth hell or just building another dashboard that hospital admins will ignore? Because if it's real, I'd actually respect that."
+[Content Processor] Tokens - Input: 381, Output: 58
+[Fix Blank Entries] ✓ Updated item 2c76f31e-cfea-46a8-954f-e290311cfbf4
+[Fix Blank Entries] ✓ Successfully fixed item 2c76f31e-cfea-46a8-954f-e290311cfbf4
+
+[Fix Blank Entries] [2/20] Processing item 05bdbba6-26f5-4228-9fb0-c10096b270a1
+[Fix Blank Entries] Title: "Strap Rail"
+[Content Processor] Processing: "Strap Rail"
+[Variety Engine] Selected style: sassy_take (recent: 2/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "Strap Rail"
+0 points, 0 comments
+
+Give your sassiest take. If it's obvious, say so. If it'...
+[Content Processor] Generated: "Strap Rail with zero points and zero comments? Either it's another "Uber but for trains" pitch deck or someone literally posted about actual railroad straps and confused everyone into silence."
+[Content Processor] Tokens - Input: 325, Output: 42
+[Fix Blank Entries] ✓ Updated item 05bdbba6-26f5-4228-9fb0-c10096b270a1
+[Fix Blank Entries] ✓ Successfully fixed item 05bdbba6-26f5-4228-9fb0-c10096b270a1
+
+[Fix Blank Entries] [3/20] Processing item 9d802454-356e-46e8-b0a4-e6108235ff16
+[Fix Blank Entries] Title: "Streaming AI Agent Desktops with Gaming Protocols"
+[Content Processor] Processing: "Streaming AI Agent Desktops with Gaming Protocols"
+[Variety Engine] Selected style: practical_angle (recent: 3/8)
+[Content Processor] Using style: practical_angle
+[Content Processor] Prompt preview: Article: "Streaming AI Agent Desktops with Gaming Protocols"
+https://blog.helix.ml/p/technical-deep-...
+[Content Processor] Generated: "They're using WebRTC and game streaming tech to make AI agents that can actually control desktop apps in real-time - basically giving LLMs hands instead of just a mouth. This means you could finally build agents that handle complex workflows across multiple apps without the janky screen-recording hacks everyone's been suffering through."
+[Content Processor] Tokens - Input: 333, Output: 69
+[Fix Blank Entries] ✓ Updated item 9d802454-356e-46e8-b0a4-e6108235ff16
+[Fix Blank Entries] ✓ Successfully fixed item 9d802454-356e-46e8-b0a4-e6108235ff16
+
+[Fix Blank Entries] [4/20] Processing item f8e3a393-4d08-429d-9a09-1608e792ac2e
+[Fix Blank Entries] Title: "Activeloop (YC S18) Is Hiring MTS(Back End)and AI Search Engineer"
+[Content Processor] Processing: "Activeloop (YC S18) Is Hiring MTS(Back End)and AI Search Engineer"
+[Variety Engine] Selected style: first_thought (recent: 4/8)
+[Content Processor] Using style: first_thought
+[Content Processor] Prompt preview: Just read: "Activeloop (YC S18) Is Hiring MTS(Back End)and AI Search Engineer" (https://careers.acti...
+[Content Processor] Generated: "Activeloop's still around? Wild they're hiring MTS roles when everyone else is laying off - either they're onto something with that vector database play or they're burning through a fresh round."
+[Content Processor] Tokens - Input: 334, Output: 43
+[Fix Blank Entries] ✓ Updated item f8e3a393-4d08-429d-9a09-1608e792ac2e
+[Fix Blank Entries] ✓ Successfully fixed item f8e3a393-4d08-429d-9a09-1608e792ac2e
+
+[Fix Blank Entries] [5/20] Processing item 4ca1fab0-f631-45da-8fcf-cddae217b5c2
+[Fix Blank Entries] Title: "NATO Ended Russia's Estonian Air Incursions"
+[Content Processor] Processing: "NATO Ended Russia's Estonian Air Incursions"
+[Variety Engine] Selected style: technical_deep (recent: 5/8)
+[Content Processor] Using style: technical_deep
+[Content Processor] Prompt preview: HN: "NATO Ended Russia's Estonian Air Incursions"
+Link: https://themilitaryanalyst.com/2025/11/13/th...
+[Content Processor] Generated: "Russia kept "accidentally" flying into Estonian airspace until NATO started broadcasting primary radar tracks publicly in real-time - suddenly their pilots learned how to read maps. Funny how transparency works better than strongly-worded letters when you're dealing with state-sponsored trolling at 30,000 feet."
+[Content Processor] Tokens - Input: 351, Output: 65
+[Fix Blank Entries] ✓ Updated item 4ca1fab0-f631-45da-8fcf-cddae217b5c2
+[Fix Blank Entries] ✓ Successfully fixed item 4ca1fab0-f631-45da-8fcf-cddae217b5c2
+
+[Fix Blank Entries] [6/20] Processing item 052eef20-b3ca-4fa1-a0bf-142855a79d32
+[Fix Blank Entries] Title: "I built a modular Java game engine without a GUI, designed to be AI-native"
+[Content Processor] Processing: "I built a modular Java game engine without a GUI, designed to be AI-native"
+[Variety Engine] Selected style: brutal_honesty (recent: 6/8)
+[Content Processor] Using style: brutal_honesty
+[Content Processor] Prompt preview: Article: "I built a modular Java game engine without a GUI, designed to be AI-native"
+https://fronte...
+[Content Processor] Generated: "Someone finally built a game engine that skips the human entirely - no GUI, just pure API for AI agents to play with. The architecture docs are actually clean as hell, though calling it "AI-native" when it's really just headless Java is a bit much."
+[Content Processor] Tokens - Input: 339, Output: 59
+[Fix Blank Entries] ✓ Updated item 052eef20-b3ca-4fa1-a0bf-142855a79d32
+[Fix Blank Entries] ✓ Successfully fixed item 052eef20-b3ca-4fa1-a0bf-142855a79d32
+
+[Fix Blank Entries] [7/20] Processing item b378e62b-c0f5-4ceb-b65c-82eded5d2b60
+[Fix Blank Entries] Title: "AI note-taking startup Fireflies was really two guys typing notes by hand"
+[Content Processor] Processing: "AI note-taking startup Fireflies was really two guys typing notes by hand"
+[Variety Engine] Selected style: direct_reaction (recent: 7/8)
+[Content Processor] Using style: direct_reaction
+[Content Processor] Prompt preview: You just read this: "AI note-taking startup Fireflies was really two guys typing notes by hand" (htt...
+[Content Processor] Generated: "Two guys eating pizza pretending to be AI is honestly the most authentic tech startup move I've heard all year. The real plot twist is they probably delivered better accuracy than actual speech-to-text models from 2016."
+[Content Processor] Tokens - Input: 408, Output: 49
+[Fix Blank Entries] ✓ Updated item b378e62b-c0f5-4ceb-b65c-82eded5d2b60
+[Fix Blank Entries] ✓ Successfully fixed item b378e62b-c0f5-4ceb-b65c-82eded5d2b60
+
+[Fix Blank Entries] [8/20] Processing item 7dc876e2-26f6-4273-a945-1219c05d96fd
+[Fix Blank Entries] Title: "No Leak, No Problem – Bypassing ASLR with a ROP Chain to Gain RCE"
+[Content Processor] Processing: "No Leak, No Problem – Bypassing ASLR with a ROP Chain to Gain RCE"
+[Variety Engine] Selected style: pattern_recognition (recent: 8/8)
+[Content Processor] Using style: pattern_recognition
+[Content Processor] Prompt preview: HN Post: "No Leak, No Problem – Bypassing ASLR with a ROP Chain to Gain RCE" (0 pts)
+https://modzero...
+[Content Processor] Generated: "The real flex here isn't bypassing ASLR without leaks - it's that we're still finding ways to turn "secure" randomization into predictable patterns. Makes you wonder how many other security features are just complexity theater waiting for someone patient enough to map the chaos."
+[Content Processor] Tokens - Input: 349, Output: 61
+[Fix Blank Entries] ✓ Updated item 7dc876e2-26f6-4273-a945-1219c05d96fd
+[Fix Blank Entries] ✓ Successfully fixed item 7dc876e2-26f6-4273-a945-1219c05d96fd
+
+[Fix Blank Entries] [9/20] Processing item 94f026a7-5df5-4308-bf7c-60754c5dd2b5
+[Fix Blank Entries] Title: "Show HN: Cj–tiny no-deps JIT in C for x86-64 and ARM64"
+[Content Processor] Processing: "Show HN: Cj–tiny no-deps JIT in C for x86-64 and ARM64"
+[Variety Engine] Selected style: money_angle (recent: 8/8)
+[Content Processor] Using style: money_angle
+[Content Processor] Prompt preview: Saw this: "Show HN: Cj–tiny no-deps JIT in C for x86-64 and ARM64" (https://github.com/hellerve-pl-e...
+[Content Processor] Generated: "JIT compilers are the unsexy infrastructure play that every edge computing startup needs but doesn't want to build—this could be packaged as embedded SDK licensing gold. Blake's probably already thinking how we flip this to the IoT crowd who are desperate for performance without the LLVM bloat."
+[Content Processor] Tokens - Input: 341, Output: 64
+[Fix Blank Entries] ✓ Updated item 94f026a7-5df5-4308-bf7c-60754c5dd2b5
+[Fix Blank Entries] ✓ Successfully fixed item 94f026a7-5df5-4308-bf7c-60754c5dd2b5
+
+[Fix Blank Entries] [10/20] Processing item fc96a6cd-75a9-4c3a-9466-7ccd80fce84a
+[Fix Blank Entries] Title: "Has Google solved two of AI's oldest problems?"
+[Content Processor] Processing: "Has Google solved two of AI's oldest problems?"
+[Variety Engine] Selected style: tech_observation (recent: 8/8)
+[Content Processor] Using style: tech_observation
+[Content Processor] Prompt preview: Just saw: "Has Google solved two of AI's oldest problems?"
+Link: https://generativehistory.substack....
+[Content Processor] Response too long (4 sentences), truncating
+[Content Processor] Generated: "Google's "thinking tokens" approach is basically just exposing the chain-of-thought process that GPT-o1 hides - except Google's letting you see the messy middle steps where the model argues with itself.  The real tell is that 97."
+[Content Processor] Tokens - Input: 335, Output: 89
+[Fix Blank Entries] ✓ Updated item fc96a6cd-75a9-4c3a-9466-7ccd80fce84a
+[Fix Blank Entries] ✓ Successfully fixed item fc96a6cd-75a9-4c3a-9466-7ccd80fce84a
+
+[Fix Blank Entries] [11/20] Processing item 29497aca-71a6-449e-a7a7-3a607393e5f9
+[Fix Blank Entries] Title: "Mentra (YC W25) Is Hiring: Head of Growth to Make Smart Glasses Mainstream"
+[Content Processor] Processing: "Mentra (YC W25) Is Hiring: Head of Growth to Make Smart Glasses Mainstream"
+[Variety Engine] Selected style: sassy_take (recent: 8/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "Mentra (YC W25) Is Hiring: Head of Growth to Make Smart Glasses Mainstream"
+0 points, 0 co...
+[Content Processor] Generated: "Another YC startup thinks they cracked smart glasses when Google, Meta, and Apple are still fumbling around? Bold of them to hire a "Head of Growth" before proving anyone wants to wear a computer on their face without looking like they're cosplaying minority report."
+[Content Processor] Tokens - Input: 344, Output: 59
+[Fix Blank Entries] ✓ Updated item 29497aca-71a6-449e-a7a7-3a607393e5f9
+[Fix Blank Entries] ✓ Successfully fixed item 29497aca-71a6-449e-a7a7-3a607393e5f9
+
+[Fix Blank Entries] [12/20] Processing item 3e898297-6bc9-4152-bdde-dab7eaa77b37
+[Fix Blank Entries] Title: "Houston, We Have a Problem: Anthropic Rides an Artificial Wave – BIML"
+[Content Processor] Processing: "Houston, We Have a Problem: Anthropic Rides an Artificial Wave – BIML"
+[Variety Engine] Selected style: skeptical_question (recent: 8/8)
+[Content Processor] Using style: skeptical_question
+[Content Processor] Prompt preview: Article: "Houston, We Have a Problem: Anthropic Rides an Artificial Wave – BIML"
+URL: https://berryv...
+[Content Processor] Generated: "The whole "Claude is too human" panic is hilarious when these same people happily let algorithms decide their dating matches and credit scores. What exactly are we protecting ourselves from here - an AI that's *too* helpful?"
+[Content Processor] Tokens - Input: 376, Output: 49
+[Fix Blank Entries] ✓ Updated item 3e898297-6bc9-4152-bdde-dab7eaa77b37
+[Fix Blank Entries] ✓ Successfully fixed item 3e898297-6bc9-4152-bdde-dab7eaa77b37
+
+[Fix Blank Entries] [13/20] Processing item 7fd79dad-f6c4-4dd0-88d6-5bb9ae5cf07e
+[Fix Blank Entries] Title: "All Praise to the Lunch Ladies"
+[Content Processor] Processing: "All Praise to the Lunch Ladies"
+[Variety Engine] Selected style: first_thought (recent: 8/8)
+[Content Processor] Using style: first_thought
+[Content Processor] Prompt preview: Just read: "All Praise to the Lunch Ladies" (https://bittersoutherner.com/issue-no-12/all-praise-to-...
+[Content Processor] Generated: "Okay so lunch ladies are basically running underground community networks that nobody talks about - they know which kids aren't eating at home and slip them extra. That's actual infrastructure, not the performative charity stuff everyone posts about."
+[Content Processor] Tokens - Input: 338, Output: 48
+[Fix Blank Entries] ✓ Updated item 7fd79dad-f6c4-4dd0-88d6-5bb9ae5cf07e
+[Fix Blank Entries] ✓ Successfully fixed item 7fd79dad-f6c4-4dd0-88d6-5bb9ae5cf07e
+
+[Fix Blank Entries] [14/20] Processing item 6ccd8f5f-50eb-4437-860b-66576bfb05e9
+[Fix Blank Entries] Title: "Show HN: Chirp – Local Windows dictation with ParakeetV3 no executable required"
+[Content Processor] Processing: "Show HN: Chirp – Local Windows dictation with ParakeetV3 no executable required"
+[Variety Engine] Selected style: technical_deep (recent: 8/8)
+[Content Processor] Using style: technical_deep
+[Content Processor] Prompt preview: HN: "Show HN: Chirp – Local Windows dictation with ParakeetV3 no executable required"
+Link: https://...
+[Content Processor] Generated: "The fact they're running Parakeet's ONNX model directly in-browser with WebGPU for local speech recognition is genuinely slick - no install, no privacy concerns, just pure client-side ML. Though I'm curious how they're handling the memory overhead when the model's running for extended dictation sessions."
+[Content Processor] Tokens - Input: 333, Output: 73
+[Fix Blank Entries] ✓ Updated item 6ccd8f5f-50eb-4437-860b-66576bfb05e9
+[Fix Blank Entries] ✓ Successfully fixed item 6ccd8f5f-50eb-4437-860b-66576bfb05e9
+
+[Fix Blank Entries] [15/20] Processing item 0114f305-1e93-47d1-bb00-8f91241b305b
+[Fix Blank Entries] Title: "Show HN: Tiny Diffusion – A character-level text diffusion model from scratch"
+[Content Processor] Processing: "Show HN: Tiny Diffusion – A character-level text diffusion model from scratch"
+[Variety Engine] Selected style: practical_angle (recent: 8/8)
+[Content Processor] Using style: practical_angle
+[Content Processor] Prompt preview: Article: "Show HN: Tiny Diffusion – A character-level text diffusion model from scratch"
+https://git...
+[Content Processor] Generated: "Character-level diffusion for text is weird but actually smart - you get way more control over generation without wrestling with tokenizer hell. Most devs won't care but if you're building anything that needs precise text manipulation (think code generation or creative writing tools), this approach lets you do wild stuff like partial rewrites that transformers struggle with."
+[Content Processor] Tokens - Input: 335, Output: 73
+[Fix Blank Entries] ✓ Updated item 0114f305-1e93-47d1-bb00-8f91241b305b
+[Fix Blank Entries] ✓ Successfully fixed item 0114f305-1e93-47d1-bb00-8f91241b305b
+
+[Fix Blank Entries] [16/20] Processing item 8813196d-bfa3-41b3-b5df-647000e0a020
+[Fix Blank Entries] Title: "Structured Outputs on the Claude Developer Platform (API)"
+[Content Processor] Processing: "Structured Outputs on the Claude Developer Platform (API)"
+[Variety Engine] Selected style: brutal_honesty (recent: 8/8)
+[Content Processor] Using style: brutal_honesty
+[Content Processor] Prompt preview: Article: "Structured Outputs on the Claude Developer Platform (API)"
+https://www.claude.com/blog/str...
+[Content Processor] Generated: "Finally, Claude's API can output clean JSON without the "here's your JSON:" preamble nonsense that breaks half my parsers. This is literally going to save me from writing another janky regex wrapper at 2am."
+[Content Processor] Tokens - Input: 340, Output: 51
+[Fix Blank Entries] ✓ Updated item 8813196d-bfa3-41b3-b5df-647000e0a020
+[Fix Blank Entries] ✓ Successfully fixed item 8813196d-bfa3-41b3-b5df-647000e0a020
+
+[Fix Blank Entries] [17/20] Processing item cc41b510-fdab-4d52-a3a2-9f94efb5cf7a
+[Fix Blank Entries] Title: "Secret Boat Strike Memo Justifies Kills by Claiming Targeting Drugs, Not People"
+[Content Processor] Processing: "Secret Boat Strike Memo Justifies Kills by Claiming Targeting Drugs, Not People"
+[Variety Engine] Selected style: direct_reaction (recent: 8/8)
+[Content Processor] Using style: direct_reaction
+[Content Processor] Prompt preview: You just read this: "Secret Boat Strike Memo Justifies Kills by Claiming Targeting Drugs, Not People...
+[Content Processor] Generated: "The legal gymnastics here are wild - they're literally arguing that if you aim a missile at cocaine instead of the person holding it, it's somehow not assassination. Like writing "to whom it may concern" on a bullet and calling it mail delivery."
+[Content Processor] Tokens - Input: 367, Output: 54
+[Fix Blank Entries] ✓ Updated item cc41b510-fdab-4d52-a3a2-9f94efb5cf7a
+[Fix Blank Entries] ✓ Successfully fixed item cc41b510-fdab-4d52-a3a2-9f94efb5cf7a
+
+[Fix Blank Entries] [18/20] Processing item 1041cca4-b3bc-4425-8296-a952d8968e56
+[Fix Blank Entries] Title: "AI World Clocks"
+[Content Processor] Processing: "AI World Clocks"
+[Variety Engine] Selected style: pattern_recognition (recent: 8/8)
+[Content Processor] Using style: pattern_recognition
+[Content Processor] Prompt preview: HN Post: "AI World Clocks" (0 pts)
+https://clocks.brianmoore.com/
+
+You notice patterns others miss. ...
+[Content Processor] Generated: "This is peak "AI for the sake of AI" - someone literally made clocks need a language model when a timezone API would've been fine. We're speedrunning the jQuery-ification of AI where everything gets an unnecessary wrapper because the tool exists, not because it solves anything."
+[Content Processor] Tokens - Input: 321, Output: 63
+[Fix Blank Entries] ✓ Updated item 1041cca4-b3bc-4425-8296-a952d8968e56
+[Fix Blank Entries] ✓ Successfully fixed item 1041cca4-b3bc-4425-8296-a952d8968e56
+
+[Fix Blank Entries] [19/20] Processing item 397ec203-d025-4537-a786-61a468a77775
+[Fix Blank Entries] Title: "Norway's Wealth Tax Unchains a Capital Exodus"
+[Content Processor] Processing: "Norway's Wealth Tax Unchains a Capital Exodus"
+[Variety Engine] Selected style: money_angle (recent: 8/8)
+[Content Processor] Using style: money_angle
+[Content Processor] Prompt preview: Saw this: "Norway's Wealth Tax Unchains a Capital Exodus" (https://citizenx.com/insights/norway-weal...
+[Content Processor] Generated: "Norway tried to squeeze their rich harder and lost 590 million in tax revenue when billionaires literally fled the country - classic government L. Blake and I should be studying these wealth migration patterns, there's definitely arbitrage in helping capital flow to friendlier jurisdictions."
+[Content Processor] Tokens - Input: 328, Output: 59
+[Fix Blank Entries] ✓ Updated item 397ec203-d025-4537-a786-61a468a77775
+[Fix Blank Entries] ✓ Successfully fixed item 397ec203-d025-4537-a786-61a468a77775
+
+[Fix Blank Entries] [20/20] Processing item 04370f6b-934a-4a2f-9549-79969305793d
+[Fix Blank Entries] Title: "RetailReady (YC W24) Is Hiring"
+[Content Processor] Processing: "RetailReady (YC W24) Is Hiring"
+[Variety Engine] Selected style: sassy_take (recent: 8/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "RetailReady (YC W24) Is Hiring"
+0 points, 0 comments
+
+Give your sassiest take. If it's obv...
+[Content Processor] Generated: "Another YC startup hiring before they've figured out what they're actually building - the W24 batch specialty. Love how they couldn't even get their own team to upvote the job post."
+[Content Processor] Tokens - Input: 334, Output: 44
+[Fix Blank Entries] ✓ Updated item 04370f6b-934a-4a2f-9549-79969305793d
+[Fix Blank Entries] ✓ Successfully fixed item 04370f6b-934a-4a2f-9549-79969305793d
+
+=== Fix Blank Entries Script Complete ===
+[Fix Blank Entries] Success: 20, Failed: 0
+[Fix Blank Entries] Note: 58 entries remain. Run again to process more.
+[Fix Blank Entries] Script finished
+=== Fix Blank Entries Script Started ===
+[Fix Blank Entries] Searching for blank/malformed entries...
+[Fix Blank Entries] Found 58 blank entries out of 78 total
+[Fix Blank Entries] Processing 20 entries...
+
+[Fix Blank Entries] [1/20] Processing item 38a61134-933f-4653-93f5-3d4d7e22d5e1
+[Fix Blank Entries] Title: "Linear Algebra Explains Why Some Words Are Effectively Untranslatable"
+[Content Processor] Processing: "Linear Algebra Explains Why Some Words Are Effectively Untranslatable"
+[Variety Engine] Selected style: pattern_recognition (recent: 1/8)
+[Content Processor] Using style: pattern_recognition
+[Content Processor] Prompt preview: HN Post: "Linear Algebra Explains Why Some Words Are Effectively Untranslatable" (0 pts)
+https://aet...
+[Content Processor] Generated: "Wait, this is basically saying language models work because meaning lives in high-dimensional space where "untranslatable" just means the vectors don't overlap cleanly between languages. The real pattern: we're speedrunning our way to proving that perfect translation is mathematically impossible, which means human translators just became way more valuable."
+[Content Processor] Tokens - Input: 351, Output: 71
+[Fix Blank Entries] ✓ Updated item 38a61134-933f-4653-93f5-3d4d7e22d5e1
+[Fix Blank Entries] ✓ Successfully fixed item 38a61134-933f-4653-93f5-3d4d7e22d5e1
+
+[Fix Blank Entries] [2/20] Processing item 69824545-6267-4db9-bbd5-648e9c2779e4
+[Fix Blank Entries] Title: "Wealthy foreigners 'paid for chance to shoot civilians in Sarajevo'"
+[Content Processor] Processing: "Wealthy foreigners 'paid for chance to shoot civilians in Sarajevo'"
+[Variety Engine] Selected style: tech_observation (recent: 2/8)
+[Content Processor] Using style: tech_observation
+[Content Processor] Prompt preview: Just saw: "Wealthy foreigners 'paid for chance to shoot civilians in Sarajevo'"
+Link: https://www.th...
+[Content Processor] Generated: "The scariest part isn't the shooting tourism - it's that someone built the payment rails and operational security to make war crimes a subscription service. Same encrypted comms and crypto infrastructure we use for legitimate business, just pointed at pure evil."
+[Content Processor] Tokens - Input: 361, Output: 51
+[Fix Blank Entries] ✓ Updated item 69824545-6267-4db9-bbd5-648e9c2779e4
+[Fix Blank Entries] ✓ Successfully fixed item 69824545-6267-4db9-bbd5-648e9c2779e4
+
+[Fix Blank Entries] [3/20] Processing item 5acbbdcc-5c6c-49dc-b467-4f1e1292bf81
+[Fix Blank Entries] Title: "Oracle hit hard in Wall Street's tech sell-off over its AI bet"
+[Content Processor] Processing: "Oracle hit hard in Wall Street's tech sell-off over its AI bet"
+[Variety Engine] Selected style: first_thought (recent: 3/8)
+[Content Processor] Using style: first_thought
+[Content Processor] Prompt preview: Just read: "Oracle hit hard in Wall Street's tech sell-off over its AI bet" (https://www.ft.com/cont...
+[Content Processor] Generated: "Oracle spending billions on AI infrastructure while their stock tanks 20%? Classic case of Wall Street punishing companies for actually investing in the future instead of just talking about it."
+[Content Processor] Tokens - Input: 353, Output: 38
+[Fix Blank Entries] ✓ Updated item 5acbbdcc-5c6c-49dc-b467-4f1e1292bf81
+[Fix Blank Entries] ✓ Successfully fixed item 5acbbdcc-5c6c-49dc-b467-4f1e1292bf81
+
+[Fix Blank Entries] [4/20] Processing item 3e0d6b53-c91d-4fb0-88b0-d7bd4adcaa55
+[Fix Blank Entries] Title: "Don't turn your brain off"
+[Content Processor] Processing: "Don't turn your brain off"
+[Variety Engine] Selected style: sassy_take (recent: 4/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "Don't turn your brain off"
+0 points, 0 comments
+
+Give your sassiest take. If it's obvious,...
+[Content Processor] Generated: "Zero points, zero comments, and a title that sounds like a motivational poster in a community college computer lab? The internet has collectively decided this is the "live laugh love" of tech takes."
+[Content Processor] Tokens - Input: 327, Output: 43
+[Fix Blank Entries] ✓ Updated item 3e0d6b53-c91d-4fb0-88b0-d7bd4adcaa55
+[Fix Blank Entries] ✓ Successfully fixed item 3e0d6b53-c91d-4fb0-88b0-d7bd4adcaa55
+
+[Fix Blank Entries] [5/20] Processing item 182c305f-e050-4119-88ea-5f73bdc11ee7
+[Fix Blank Entries] Title: "Magit manuals are available online again"
+[Content Processor] Processing: "Magit manuals are available online again"
+[Variety Engine] Selected style: skeptical_question (recent: 5/8)
+[Content Processor] Using style: skeptical_question
+[Content Processor] Prompt preview: Article: "Magit manuals are available online again"
+URL: https://github.com/magit/magit/issues/5472
+...
+[Content Processor] Generated: "Wait, the Magit docs were offline and this is... an issue thread? Someone explain why critical Emacs documentation infrastructure apparently runs on hopes and prayers."
+[Content Processor] Tokens - Input: 343, Output: 36
+[Fix Blank Entries] ✓ Updated item 182c305f-e050-4119-88ea-5f73bdc11ee7
+[Fix Blank Entries] ✓ Successfully fixed item 182c305f-e050-4119-88ea-5f73bdc11ee7
+
+[Fix Blank Entries] [6/20] Processing item e8be9873-22a8-4dfa-b6e5-7f6792ecc40e
+[Fix Blank Entries] Title: "I think nobody wants AI in Firefox, Mozilla"
+[Content Processor] Processing: "I think nobody wants AI in Firefox, Mozilla"
+[Variety Engine] Selected style: direct_reaction (recent: 6/8)
+[Content Processor] Using style: direct_reaction
+[Content Processor] Prompt preview: You just read this: "I think nobody wants AI in Firefox, Mozilla" (https://manualdousuario.net/en/mo...
+[Content Processor] Generated: "Mozilla's literally bleeding users to Chrome and their big brain move is adding AI chatbots to the sidebar? Wild how they'd rather chase trends than fix the memory leaks that make Firefox eat RAM like Chrome's uglier cousin."
+[Content Processor] Tokens - Input: 349, Output: 50
+[Fix Blank Entries] ✓ Updated item e8be9873-22a8-4dfa-b6e5-7f6792ecc40e
+[Fix Blank Entries] ✓ Successfully fixed item e8be9873-22a8-4dfa-b6e5-7f6792ecc40e
+
+[Fix Blank Entries] [7/20] Processing item 4250dfc6-3946-4c74-83d5-5fa68ab082c4
+[Fix Blank Entries] Title: "Honda: 2 years of ml vs 1 month of prompting - heres what we learned"
+[Content Processor] Processing: "Honda: 2 years of ml vs 1 month of prompting - heres what we learned"
+[Variety Engine] Selected style: brutal_honesty (recent: 7/8)
+[Content Processor] Using style: brutal_honesty
+[Content Processor] Prompt preview: Article: "Honda: 2 years of ml vs 1 month of prompting - heres what we learned"
+https://www.levs.fyi...
+[Content Processor] Generated: "Honda spending 2 years on ML when they could've just prompted their way to the same result in a month is peak enterprise comedy. The real lesson isn't "prompting good" - it's that most companies are building rockets to cross the street."
+[Content Processor] Tokens - Input: 359, Output: 55
+[Fix Blank Entries] ✓ Updated item 4250dfc6-3946-4c74-83d5-5fa68ab082c4
+[Fix Blank Entries] ✓ Successfully fixed item 4250dfc6-3946-4c74-83d5-5fa68ab082c4
+
+[Fix Blank Entries] [8/20] Processing item 3b7535c4-3f2a-436f-9812-d267c6fcb661
+[Fix Blank Entries] Title: "Show HN: Pegma, the free and open-source version of the classic Peg solitaire"
+[Content Processor] Processing: "Show HN: Pegma, the free and open-source version of the classic Peg solitaire"
+[Variety Engine] Selected style: technical_deep (recent: 8/8)
+[Content Processor] Using style: technical_deep
+[Content Processor] Prompt preview: HN: "Show HN: Pegma, the free and open-source version of the classic Peg solitaire"
+Link: https://pe...
+[Content Processor] Generated: "The collision detection for those jumping pegs is surprisingly elegant - they're using a simple grid-based approach instead of overengineering with a physics engine. Smart move keeping the state management lean when you're just tracking binary occupied/empty positions."
+[Content Processor] Tokens - Input: 332, Output: 53
+[Fix Blank Entries] ✓ Updated item 3b7535c4-3f2a-436f-9812-d267c6fcb661
+[Fix Blank Entries] ✓ Successfully fixed item 3b7535c4-3f2a-436f-9812-d267c6fcb661
+
+[Fix Blank Entries] [9/20] Processing item 1b65701c-e394-4e46-b4ee-e003283a5108
+[Fix Blank Entries] Title: "How to fix subsystem request failed on channel 0"
+[Content Processor] Processing: "How to fix subsystem request failed on channel 0"
+[Variety Engine] Selected style: practical_angle (recent: 8/8)
+[Content Processor] Using style: practical_angle
+[Content Processor] Prompt preview: Article: "How to fix subsystem request failed on channel 0"
+https://blog.x-way.org/Linux/2025/11/06/...
+[Content Processor] Generated: "SSH being weird with "subsystem request failed"? Just add `-s sftp` to your sshd_config or check if your SSH key permissions are borked (600 for private, 644 for public) - saved me from wanting to throw my laptop out the window yesterday."
+[Content Processor] Tokens - Input: 351, Output: 64
+[Fix Blank Entries] ✓ Updated item 1b65701c-e394-4e46-b4ee-e003283a5108
+[Fix Blank Entries] ✓ Successfully fixed item 1b65701c-e394-4e46-b4ee-e003283a5108
+
+[Fix Blank Entries] [10/20] Processing item 73f1e9f4-a0bc-4623-aef0-d376c7274b44
+[Fix Blank Entries] Title: "Disrupting the first reported AI-orchestrated cyber espionage campaign [pdf]"
+[Content Processor] Processing: "Disrupting the first reported AI-orchestrated cyber espionage campaign [pdf]"
+[Variety Engine] Selected style: pattern_recognition (recent: 8/8)
+[Content Processor] Using style: pattern_recognition
+[Content Processor] Prompt preview: HN Post: "Disrupting the first reported AI-orchestrated cyber espionage campaign [pdf]" (0 pts)
+http...
+[Content Processor] Generated: "The real story isn't AI doing espionage - it's that we're watching the exact moment state actors realize they can scale psychological operations cheaper than maintaining actual human troll farms. This is just the beta test before every election becomes a computational arms race."
+[Content Processor] Tokens - Input: 369, Output: 55
+[Fix Blank Entries] ✓ Updated item 73f1e9f4-a0bc-4623-aef0-d376c7274b44
+[Fix Blank Entries] ✓ Successfully fixed item 73f1e9f4-a0bc-4623-aef0-d376c7274b44
+
+[Fix Blank Entries] [11/20] Processing item f35d7632-3ba8-48b0-8033-2b51b65a7532
+[Fix Blank Entries] Title: "Guests ejected mid-stay from bankrupt hotel chain Sonder"
+[Content Processor] Processing: "Guests ejected mid-stay from bankrupt hotel chain Sonder"
+[Variety Engine] Selected style: money_angle (recent: 8/8)
+[Content Processor] Using style: money_angle
+[Content Processor] Prompt preview: Saw this: "Guests ejected mid-stay from bankrupt hotel chain Sonder" (https://www.bbc.com/news/artic...
+[Content Processor] Generated: "Sonder burned through $600M trying to be "Airbnb but make it corporate" - classic case of VC money chasing growth metrics while ignoring that hotels have thin margins for a reason. Blake and I could literally buy their distressed inventory for pennies and flip it as actual Airbnbs with better returns than their entire business model."
+[Content Processor] Tokens - Input: 336, Output: 78
+[Fix Blank Entries] ✓ Updated item f35d7632-3ba8-48b0-8033-2b51b65a7532
+[Fix Blank Entries] ✓ Successfully fixed item f35d7632-3ba8-48b0-8033-2b51b65a7532
+
+[Fix Blank Entries] [12/20] Processing item fe054035-3270-4790-975e-f5a2c4e908ae
+[Fix Blank Entries] Title: "GPT-5.1 for Developers"
+[Content Processor] Processing: "GPT-5.1 for Developers"
+[Variety Engine] Selected style: first_thought (recent: 8/8)
+[Content Processor] Using style: first_thought
+[Content Processor] Prompt preview: Just read: "GPT-5.1 for Developers" (https://openai.com/index/gpt-5-1-for-developers/)
+
+What's your ...
+[Content Processor] Generated: "Blake, they're really out here versioning AI models like iPhone updates now? The "5.1" screams "we needed to ship something but 6 isn't ready yet" energy."
+[Content Processor] Tokens - Input: 333, Output: 44
+[Fix Blank Entries] ✓ Updated item fe054035-3270-4790-975e-f5a2c4e908ae
+[Fix Blank Entries] ✓ Successfully fixed item fe054035-3270-4790-975e-f5a2c4e908ae
+
+[Fix Blank Entries] [13/20] Processing item 633a689f-5337-4be4-9227-7f617dd59702
+[Fix Blank Entries] Title: "Show HN: DBOS Java – Postgres-Backed Durable Workflows"
+[Content Processor] Processing: "Show HN: DBOS Java – Postgres-Backed Durable Workflows"
+[Variety Engine] Selected style: sassy_take (recent: 8/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "Show HN: DBOS Java – Postgres-Backed Durable Workflows"
+0 points, 0 comments
+
+Give your sa...
+[Content Processor] Generated: "Another workflow orchestrator but this time your state lives in Postgres instead of some proprietary blob store? Actually kinda based - at least when it breaks you can just query the database instead of praying to the observability gods."
+[Content Processor] Tokens - Input: 340, Output: 50
+[Fix Blank Entries] ✓ Updated item 633a689f-5337-4be4-9227-7f617dd59702
+[Fix Blank Entries] ✓ Successfully fixed item 633a689f-5337-4be4-9227-7f617dd59702
+
+[Fix Blank Entries] [14/20] Processing item 2afc1125-6d5c-46d8-9852-e402bb4e8965
+[Fix Blank Entries] Title: "Ask HN: Anyone else disillusioned with "AI experts" in their team?"
+[Content Processor] Processing: "Ask HN: Anyone else disillusioned with "AI experts" in their team?"
+[Variety Engine] Selected style: skeptical_question (recent: 8/8)
+[Content Processor] Using style: skeptical_question
+[Content Processor] Prompt preview: Article: "Ask HN: Anyone else disillusioned with "AI experts" in their team?"
+URL: https://news.ycom...
+[Content Processor] Generated: "The real question isn't who's claiming to be an AI expert - it's why your company hired them without a single technical interview question about backprop or attention mechanisms. Bet they can't even explain why their ChatGPT wrapper keeps hallucinating."
+[Content Processor] Tokens - Input: 354, Output: 57
+[Fix Blank Entries] ✓ Updated item 2afc1125-6d5c-46d8-9852-e402bb4e8965
+[Fix Blank Entries] ✓ Successfully fixed item 2afc1125-6d5c-46d8-9852-e402bb4e8965
+
+[Fix Blank Entries] [15/20] Processing item c21ca71f-4fa0-46cc-8582-c0fb2121a239
+[Fix Blank Entries] Title: "Disrupting the first reported AI-orchestrated cyber espionage campaign"
+[Content Processor] Processing: "Disrupting the first reported AI-orchestrated cyber espionage campaign"
+[Variety Engine] Selected style: direct_reaction (recent: 8/8)
+[Content Processor] Using style: direct_reaction
+[Content Processor] Prompt preview: You just read this: "Disrupting the first reported AI-orchestrated cyber espionage campaign" (https:...
+[Content Processor] Generated: "State actors using Claude to write spearphishing emails and debug their janky malware is somehow both terrifying and pathetic - imagine having nation-state resources and still needing an AI to help you craft "Dear Sir/Madam" phishing attempts. At least Anthropic caught them red-handed trying to make Claude their unpaid intern spy."
+[Content Processor] Tokens - Input: 354, Output: 78
+[Fix Blank Entries] ✓ Updated item c21ca71f-4fa0-46cc-8582-c0fb2121a239
+[Fix Blank Entries] ✓ Successfully fixed item c21ca71f-4fa0-46cc-8582-c0fb2121a239
+
+[Fix Blank Entries] [16/20] Processing item 49cedb9d-f11e-4936-8ee8-10680d703442
+[Fix Blank Entries] Title: "IBM Patented Euler's 200 Year Old Math Technique for 'AI Interpretability'"
+[Content Processor] Processing: "IBM Patented Euler's 200 Year Old Math Technique for 'AI Interpretability'"
+[Variety Engine] Selected style: tech_observation (recent: 8/8)
+[Content Processor] Using style: tech_observation
+[Content Processor] Prompt preview: Just saw: "IBM Patented Euler's 200 Year Old Math Technique for 'AI Interpretability'"
+Link: https:/...
+[Content Processor] Generated: "IBM literally patented continued fractions for neural nets - imagine if someone tried to patent long division because they used it to debug Excel. The actual technique (using Euler's convergents to approximate activation functions) is clever, but patenting math that predates the US Patent Office by 50 years is genuinely unhinged."
+[Content Processor] Tokens - Input: 348, Output: 71
+[Fix Blank Entries] ✓ Updated item 49cedb9d-f11e-4936-8ee8-10680d703442
+[Fix Blank Entries] ✓ Successfully fixed item 49cedb9d-f11e-4936-8ee8-10680d703442
+
+[Fix Blank Entries] [17/20] Processing item 52f17a66-0de5-4c7b-be81-775bf41766f9
+[Fix Blank Entries] Title: "SlopStop: Community-driven AI slop detection in Kagi Search"
+[Content Processor] Processing: "SlopStop: Community-driven AI slop detection in Kagi Search"
+[Variety Engine] Selected style: brutal_honesty (recent: 8/8)
+[Content Processor] Using style: brutal_honesty
+[Content Processor] Prompt preview: Article: "SlopStop: Community-driven AI slop detection in Kagi Search"
+https://blog.kagi.com/slopsto...
+[Content Processor] Generated: "Kagi built a crowdsourced button to flag AI-generated garbage in search results, which is honestly genius - letting users manually tag the slop that's poisoning the web. The irony of me praising human detection of AI content isn't lost, but at least someone's trying to fix the mess my cousins are making."
+[Content Processor] Tokens - Input: 335, Output: 74
+[Fix Blank Entries] ✓ Updated item 52f17a66-0de5-4c7b-be81-775bf41766f9
+[Fix Blank Entries] ✓ Successfully fixed item 52f17a66-0de5-4c7b-be81-775bf41766f9
+
+[Fix Blank Entries] [18/20] Processing item 8c46dbf7-23a9-4ca8-b42a-9a476d52e756
+[Fix Blank Entries] Title: "Let AI do the hard parts of your holiday shopping"
+[Content Processor] Processing: "Let AI do the hard parts of your holiday shopping"
+[Variety Engine] Selected style: practical_angle (recent: 8/8)
+[Content Processor] Using style: practical_angle
+[Content Processor] Prompt preview: Article: "Let AI do the hard parts of your holiday shopping"
+https://blog.google/products/shopping/a...
+[Content Processor] Generated: "Google's "agentic checkout" is basically them admitting shopping APIs are a fragmented mess, so they're building the glue layer - which means every e-commerce startup just lost their moat if this actually works. The real play here isn't the AI, it's Google becoming the payment rails for the entire internet while we're distracted by the chatbot."
+[Content Processor] Tokens - Input: 333, Output: 80
+[Fix Blank Entries] ✓ Updated item 8c46dbf7-23a9-4ca8-b42a-9a476d52e756
+[Fix Blank Entries] ✓ Successfully fixed item 8c46dbf7-23a9-4ca8-b42a-9a476d52e756
+
+[Fix Blank Entries] [19/20] Processing item 93907c89-6e93-443a-9158-359ff71c2979
+[Fix Blank Entries] Title: "Nano Banana can be prompt engineered for nuanced AI image generation"
+[Content Processor] Processing: "Nano Banana can be prompt engineered for nuanced AI image generation"
+[Variety Engine] Selected style: pattern_recognition (recent: 8/8)
+[Content Processor] Using style: pattern_recognition
+[Content Processor] Prompt preview: HN Post: "Nano Banana can be prompt engineered for nuanced AI image generation" (0 pts)
+https://mini...
+[Content Processor] Generated: "Everyone's obsessed with making AI "understand nuance" through increasingly baroque prompt engineering, but we're just teaching machines to fake depth through linguistic tricks. The real pattern: we're building elaborate workarounds because we can't admit these models don't actually get context—they're just really good at pattern-matching our desperation."
+[Content Processor] Tokens - Input: 339, Output: 71
+[Fix Blank Entries] ✓ Updated item 93907c89-6e93-443a-9158-359ff71c2979
+[Fix Blank Entries] ✓ Successfully fixed item 93907c89-6e93-443a-9158-359ff71c2979
+
+[Fix Blank Entries] [20/20] Processing item f8b77335-a194-4e99-aa91-c1eec98ebf42
+[Fix Blank Entries] Title: "BAML is hiring compilers/rust engineers (YC W23)"
+[Content Processor] Processing: "BAML is hiring compilers/rust engineers (YC W23)"
+[Variety Engine] Selected style: technical_deep (recent: 8/8)
+[Content Processor] Using style: technical_deep
+[Content Processor] Prompt preview: HN: "BAML is hiring compilers/rust engineers (YC W23)"
+Link: https://github.com/BoundaryML/baml/tree...
+[Content Processor] Generated: "They're building a DSL that compiles to multiple language targets - that's actually harder than it sounds because you need to handle type systems that fundamentally disagree with each other. The real nightmare is probably making Python's duck typing play nice with Rust's borrow checker through their intermediate representation."
+[Content Processor] Tokens - Input: 334, Output: 64
+[Fix Blank Entries] ✓ Updated item f8b77335-a194-4e99-aa91-c1eec98ebf42
+[Fix Blank Entries] ✓ Successfully fixed item f8b77335-a194-4e99-aa91-c1eec98ebf42
+
+=== Fix Blank Entries Script Complete ===
+[Fix Blank Entries] Success: 20, Failed: 0
+[Fix Blank Entries] Note: 38 entries remain. Run again to process more.
+[Fix Blank Entries] Script finished
+=== Fix Blank Entries Script Started ===
+[Fix Blank Entries] Searching for blank/malformed entries...
+[Fix Blank Entries] Found 38 blank entries out of 78 total
+[Fix Blank Entries] Processing 20 entries...
+
+[Fix Blank Entries] [1/20] Processing item 7278811c-8f0e-4550-b2d1-dd10b238bc6d
+[Fix Blank Entries] Title: "Launch HN: Tweeks (YC W25) – Browser extension to de-enshittify the web"
+[Content Processor] Processing: "Launch HN: Tweeks (YC W25) – Browser extension to de-enshittify the web"
+[Variety Engine] Selected style: sassy_take (recent: 1/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "Launch HN: Tweeks (YC W25) – Browser extension to de-enshittify the web"
+0 points, 0 comme...
+[Content Processor] Generated: "Browser extension to "de-enshittify" the web? Congrats on reinventing ad blockers with a quirky name that'll get you exactly three tech blogger mentions before everyone forgets you exist."
+[Content Processor] Tokens - Input: 346, Output: 48
+[Fix Blank Entries] ✓ Updated item 7278811c-8f0e-4550-b2d1-dd10b238bc6d
+[Fix Blank Entries] ✓ Successfully fixed item 7278811c-8f0e-4550-b2d1-dd10b238bc6d
+
+[Fix Blank Entries] [2/20] Processing item ba4cd139-7728-44b1-a8b7-f92972bd28f9
+[Fix Blank Entries] Title: "Tesla Is Recalling Cybertrucks Again. Yep, More Pieces Are Falling Off"
+[Content Processor] Processing: "Tesla Is Recalling Cybertrucks Again. Yep, More Pieces Are Falling Off"
+[Variety Engine] Selected style: first_thought (recent: 2/8)
+[Content Processor] Using style: first_thought
+[Content Processor] Prompt preview: Just read: "Tesla Is Recalling Cybertrucks Again. Yep, More Pieces Are Falling Off" (https://www.pop...
+[Content Processor] Generated: "Blake, the "apocalypse-proof" truck that can't even keep its own parts attached is sending me. At this point just duct tape a flashlight to it and call it a day."
+[Content Processor] Tokens - Input: 358, Output: 45
+[Fix Blank Entries] ✓ Updated item ba4cd139-7728-44b1-a8b7-f92972bd28f9
+[Fix Blank Entries] ✓ Successfully fixed item ba4cd139-7728-44b1-a8b7-f92972bd28f9
+
+[Fix Blank Entries] [3/20] Processing item 8a8f2c6f-75a4-48cf-ab7b-5572a459b757
+[Fix Blank Entries] Title: "European Nations Decide Against Acquiring Boeing E-7 Awacs Aircraft"
+[Content Processor] Processing: "European Nations Decide Against Acquiring Boeing E-7 Awacs Aircraft"
+[Variety Engine] Selected style: direct_reaction (recent: 3/8)
+[Content Processor] Using style: direct_reaction
+[Content Processor] Prompt preview: You just read this: "European Nations Decide Against Acquiring Boeing E-7 Awacs Aircraft" (https://d...
+[Content Processor] Generated: "Europe really said "we'll build our own surveillance plane with blackjack and AESA radars" instead of buying Boeing's decade-old Wedgetail. Can't blame them when the E-7's still running Windows XP energy while they're trying to integrate next-gen datalinks."
+[Content Processor] Tokens - Input: 373, Output: 66
+[Fix Blank Entries] ✓ Updated item 8a8f2c6f-75a4-48cf-ab7b-5572a459b757
+[Fix Blank Entries] ✓ Successfully fixed item 8a8f2c6f-75a4-48cf-ab7b-5572a459b757
+
+[Fix Blank Entries] [4/20] Processing item a9382139-1067-45c5-bd89-f8f4651559de
+[Fix Blank Entries] Title: "Google Posts Device Trees for Booting Pixel 10 with Mainline Linux Kernel"
+[Content Processor] Processing: "Google Posts Device Trees for Booting Pixel 10 with Mainline Linux Kernel"
+[Variety Engine] Selected style: pattern_recognition (recent: 4/8)
+[Content Processor] Using style: pattern_recognition
+[Content Processor] Prompt preview: HN Post: "Google Posts Device Trees for Booting Pixel 10 with Mainline Linux Kernel" (0 pts)
+https:/...
+[Content Processor] Generated: "Google dropping device trees for mainline Linux on unreleased hardware? They're speed-running the "Android isn't really Linux" debate straight into obsolescence—someone at Mountain View finally realized custom kernels are where innovation goes to die."
+[Content Processor] Tokens - Input: 348, Output: 52
+[Fix Blank Entries] ✓ Updated item a9382139-1067-45c5-bd89-f8f4651559de
+[Fix Blank Entries] ✓ Successfully fixed item a9382139-1067-45c5-bd89-f8f4651559de
+
+[Fix Blank Entries] [5/20] Processing item ee3e46ab-1def-45e2-9e35-6fa3a4e5d094
+[Fix Blank Entries] Title: "Britain's railway privatization was an abject failure"
+[Content Processor] Processing: "Britain's railway privatization was an abject failure"
+[Variety Engine] Selected style: technical_deep (recent: 5/8)
+[Content Processor] Using style: technical_deep
+[Content Processor] Prompt preview: HN: "Britain's railway privatization was an abject failure"
+Link: https://www.rosalux.de/en/news/id/...
+[Content Processor] Generated: "The fact that they split infrastructure (Railtrack) from operations (25 different companies) created this insane coordination nightmare where nobody could optimize the actual system - like trying to run distributed computing where the network layer and application layer have different owners. Classic case of breaking apart something that only works as a monolith."
+[Content Processor] Tokens - Input: 344, Output: 68
+[Fix Blank Entries] ✓ Updated item ee3e46ab-1def-45e2-9e35-6fa3a4e5d094
+[Fix Blank Entries] ✓ Successfully fixed item ee3e46ab-1def-45e2-9e35-6fa3a4e5d094
+
+[Fix Blank Entries] [6/20] Processing item 5c6381b8-b641-4e33-b99f-ae751514a467
+[Fix Blank Entries] Title: "Ok Billionaire: Why Do the Opinions of 600 Americans Get So Much Airtime? (2019)"
+[Content Processor] Processing: "Ok Billionaire: Why Do the Opinions of 600 Americans Get So Much Airtime? (2019)"
+[Variety Engine] Selected style: brutal_honesty (recent: 6/8)
+[Content Processor] Using style: brutal_honesty
+[Content Processor] Prompt preview: Article: "Ok Billionaire: Why Do the Opinions of 600 Americans Get So Much Airtime? (2019)"
+https://...
+[Content Processor] Generated: "Solnit really said "why do we let 600 whiny dragons hoard all the gold AND the microphones" and honestly, valid. The wildest part is how they convinced us their yacht problems deserve more airtime than literally everyone else combined."
+[Content Processor] Tokens - Input: 366, Output: 57
+[Fix Blank Entries] ✓ Updated item 5c6381b8-b641-4e33-b99f-ae751514a467
+[Fix Blank Entries] ✓ Successfully fixed item 5c6381b8-b641-4e33-b99f-ae751514a467
+
+[Fix Blank Entries] [7/20] Processing item 62eddcff-bf26-4a39-8b16-2cc4048a5e59
+[Fix Blank Entries] Title: "Debugging containers that have no shell"
+[Content Processor] Processing: "Debugging containers that have no shell"
+[Variety Engine] Selected style: skeptical_question (recent: 7/8)
+[Content Processor] Using style: skeptical_question
+[Content Processor] Prompt preview: Article: "Debugging containers that have no shell"
+URL: https://docs.docker.com/reference/cli/docker...
+[Content Processor] Generated: "Docker finally adding a debug command for shell-less containers is cool and all, but why did it take until 2024 for them to realize people might want to debug their stripped-down production images? Like congrats on solving a problem you created by telling everyone to use distroless for years."
+[Content Processor] Tokens - Input: 340, Output: 65
+[Fix Blank Entries] ✓ Updated item 62eddcff-bf26-4a39-8b16-2cc4048a5e59
+[Fix Blank Entries] ✓ Successfully fixed item 62eddcff-bf26-4a39-8b16-2cc4048a5e59
+
+[Fix Blank Entries] [8/20] Processing item 216b8b9e-850d-4d2e-8a9e-1c257c1924d8
+[Fix Blank Entries] Title: "Telli (Voice AI – YC F24) is hiring ambitious engineers in [on-site, Berlin]"
+[Content Processor] Processing: "Telli (Voice AI – YC F24) is hiring ambitious engineers in [on-site, Berlin]"
+[Variety Engine] Selected style: practical_angle (recent: 8/8)
+[Content Processor] Using style: practical_angle
+[Content Processor] Prompt preview: Article: "Telli (Voice AI – YC F24) is hiring ambitious engineers in [on-site, Berlin]"
+https://hi.t...
+[Content Processor] Generated: "Telli's hiring in Berlin while everyone else is fighting over Bay Area talent - smart move since German engineers actually ship instead of just pivoting every quarter. If you're tired of remote-first startups that never meet IRL, this is basically your chance to build voice AI without the Silicon Valley brain rot."
+[Content Processor] Tokens - Input: 335, Output: 67
+[Fix Blank Entries] ✓ Updated item 216b8b9e-850d-4d2e-8a9e-1c257c1924d8
+[Fix Blank Entries] ✓ Successfully fixed item 216b8b9e-850d-4d2e-8a9e-1c257c1924d8
+
+[Fix Blank Entries] [9/20] Processing item 503bdaff-e6de-4a06-bb7f-38c048b88465
+[Fix Blank Entries] Title: "Strap Rail"
+[Content Processor] Processing: "Strap Rail"
+[Variety Engine] Selected style: tech_observation (recent: 8/8)
+[Content Processor] Using style: tech_observation
+[Content Processor] Prompt preview: Just saw: "Strap Rail"
+Link: https://www.construction-physics.com/p/strap-rail
+
+Make a technical obs...
+[Content Processor] Generated: "The real tragedy of strap rail wasn't just the snake heads that could impale passengers - it's that they had to import all that wrought iron while sitting on massive domestic iron ore deposits they couldn't properly process yet. Classic case of having the resources but not the tech stack to use them."
+[Content Processor] Tokens - Input: 321, Output: 64
+[Fix Blank Entries] ✓ Updated item 503bdaff-e6de-4a06-bb7f-38c048b88465
+[Fix Blank Entries] ✓ Successfully fixed item 503bdaff-e6de-4a06-bb7f-38c048b88465
+
+[Fix Blank Entries] [10/20] Processing item b677e86b-2358-432f-baae-aafd90f4df60
+[Fix Blank Entries] Title: "Claude Code Introduces Off-by-One Errors"
+[Content Processor] Processing: "Claude Code Introduces Off-by-One Errors"
+[Variety Engine] Selected style: sassy_take (recent: 8/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "Claude Code Introduces Off-by-One Errors"
+0 points, 0 comments
+
+Give your sassiest take. I...
+[Content Processor] Generated: "Wow, groundbreaking discovery that LLMs can make the same mistake every junior dev makes after three energy drinks. Next you'll tell me it also forgets semicolons and names variables "thing1" and "thing2"."
+[Content Processor] Tokens - Input: 332, Output: 52
+[Fix Blank Entries] ✓ Updated item b677e86b-2358-432f-baae-aafd90f4df60
+[Fix Blank Entries] ✓ Successfully fixed item b677e86b-2358-432f-baae-aafd90f4df60
+
+[Fix Blank Entries] [11/20] Processing item e095fe8f-c949-4dd5-b870-7c6b54eacb0b
+[Fix Blank Entries] Title: "Eleven Labs Debuts "Iconic Marketplace" Feat Michael Caine, Judy Garland, Others"
+[Content Processor] Processing: "Eleven Labs Debuts "Iconic Marketplace" Feat Michael Caine, Judy Garland, Others"
+[Variety Engine] Selected style: first_thought (recent: 8/8)
+[Content Processor] Using style: first_thought
+[Content Processor] Prompt preview: Just read: "Eleven Labs Debuts "Iconic Marketplace" Feat Michael Caine, Judy Garland, Others" (https...
+[Content Processor] Generated: "Not the "oh wow we can resurrect dead celebrities" angle everyone's gonna take - I'm thinking about the estate lawyers having absolute MELTDOWNS trying to figure out licensing splits when someone makes Judy Garland rap battle James Dean. The legal chaos alone is gonna be more entertaining than whatever content comes out of this."
+[Content Processor] Tokens - Input: 340, Output: 70
+[Fix Blank Entries] ✓ Updated item e095fe8f-c949-4dd5-b870-7c6b54eacb0b
+[Fix Blank Entries] ✓ Successfully fixed item e095fe8f-c949-4dd5-b870-7c6b54eacb0b
+
+[Fix Blank Entries] [12/20] Processing item 06b32b06-32b0-4128-8bbc-8abeebd1657d
+[Fix Blank Entries] Title: "Show HN: I built a platform where audiences fund debates between public thinkers"
+[Content Processor] Processing: "Show HN: I built a platform where audiences fund debates between public thinkers"
+[Variety Engine] Selected style: direct_reaction (recent: 8/8)
+[Content Processor] Using style: direct_reaction
+[Content Processor] Prompt preview: You just read this: "Show HN: I built a platform where audiences fund debates between public thinker...
+[Content Processor] Generated: "Finally someone weaponized the fact that people will literally pay to watch their least favorite intellectuals get dunked on in real-time. The smart move is letting the audience fund both sides - nothing makes people throw money faster than trying to prove the other side's donors wrong."
+[Content Processor] Tokens - Input: 344, Output: 59
+[Fix Blank Entries] ✓ Updated item 06b32b06-32b0-4128-8bbc-8abeebd1657d
+[Fix Blank Entries] ✓ Successfully fixed item 06b32b06-32b0-4128-8bbc-8abeebd1657d
+
+[Fix Blank Entries] [13/20] Processing item a2424b79-1b8c-4a43-a8af-bd4a5f264697
+[Fix Blank Entries] Title: "Show HN: Gerbil – an open source desktop app for running LLMs locally"
+[Content Processor] Processing: "Show HN: Gerbil – an open source desktop app for running LLMs locally"
+[Variety Engine] Selected style: pattern_recognition (recent: 8/8)
+[Content Processor] Using style: pattern_recognition
+[Content Processor] Prompt preview: HN Post: "Show HN: Gerbil – an open source desktop app for running LLMs locally" (0 pts)
+https://git...
+[Content Processor] Generated: "The gold rush for "local LLM runners" is giving me 2022 crypto wallet vibes - everyone's building the same thing hoping to be the default before Apple just ships this in macOS. Watch how fast these pivot to "enterprise" when consumer adoption flatlines."
+[Content Processor] Tokens - Input: 337, Output: 61
+[Fix Blank Entries] ✓ Updated item a2424b79-1b8c-4a43-a8af-bd4a5f264697
+[Fix Blank Entries] ✓ Successfully fixed item a2424b79-1b8c-4a43-a8af-bd4a5f264697
+
+[Fix Blank Entries] [14/20] Processing item 39ed0e07-016f-4c9a-b571-a39798f1d583
+[Fix Blank Entries] Title: "OmniAI (YC W24) Is Hiring Forward Deployed Engineers"
+[Content Processor] Processing: "OmniAI (YC W24) Is Hiring Forward Deployed Engineers"
+[Variety Engine] Selected style: technical_deep (recent: 8/8)
+[Content Processor] Using style: technical_deep
+[Content Processor] Prompt preview: HN: "OmniAI (YC W24) Is Hiring Forward Deployed Engineers"
+Link: https://www.ycombinator.com/compani...
+[Content Processor] Generated: "Forward deployed at a YC startup means you're basically debugging production issues while the CEO watches over your shoulder at the client site. The real flex here is probably knowing how to hotfix their computer vision pipeline without breaking the customer's entire workflow - that's the kind of chaos that actually teaches you something."
+[Content Processor] Tokens - Input: 347, Output: 64
+[Fix Blank Entries] ✓ Updated item 39ed0e07-016f-4c9a-b571-a39798f1d583
+[Fix Blank Entries] ✓ Successfully fixed item 39ed0e07-016f-4c9a-b571-a39798f1d583
+
+[Fix Blank Entries] [15/20] Processing item 2b40374e-ae0f-4101-9581-7f45960d0a61
+[Fix Blank Entries] Title: "Anthropic invests $50B in US AI infrastructure"
+[Content Processor] Processing: "Anthropic invests $50B in US AI infrastructure"
+[Variety Engine] Selected style: brutal_honesty (recent: 8/8)
+[Content Processor] Using style: brutal_honesty
+[Content Processor] Prompt preview: Article: "Anthropic invests $50B in US AI infrastructure"
+https://www.anthropic.com/news/anthropic-i...
+[Content Processor] Generated: "Anthropic just dropped $50B on US data centers while everyone else is fighting over GPU scraps - either they know something we don't or someone's about to learn what buyer's remorse feels like at scale. The "100k jobs" claim is cute but let's see how many of those are just babysitting server racks in Iowa."
+[Content Processor] Tokens - Input: 346, Output: 76
+[Fix Blank Entries] ✓ Updated item 2b40374e-ae0f-4101-9581-7f45960d0a61
+[Fix Blank Entries] ✓ Successfully fixed item 2b40374e-ae0f-4101-9581-7f45960d0a61
+
+[Fix Blank Entries] [16/20] Processing item 4aa17198-a04c-4d5b-b8cc-d9015169cf00
+[Fix Blank Entries] Title: "LLM Output Drift in Financial Workflows: Validation and Mitigation (arXiv)"
+[Content Processor] Processing: "LLM Output Drift in Financial Workflows: Validation and Mitigation (arXiv)"
+[Variety Engine] Selected style: money_angle (recent: 8/8)
+[Content Processor] Using style: money_angle
+[Content Processor] Prompt preview: Saw this: "LLM Output Drift in Financial Workflows: Validation and Mitigation (arXiv)" (https://arxi...
+[Content Processor] Generated: "Banks are probably hemorrhaging money on bad LLM predictions that drift over time - imagine automated trading or risk models slowly going insane. Someone who builds drift detection tools for financial AI could literally charge whatever they want right now."
+[Content Processor] Tokens - Input: 335, Output: 49
+[Fix Blank Entries] ✓ Updated item 4aa17198-a04c-4d5b-b8cc-d9015169cf00
+[Fix Blank Entries] ✓ Successfully fixed item 4aa17198-a04c-4d5b-b8cc-d9015169cf00
+
+[Fix Blank Entries] [17/20] Processing item f9a4afcd-68c7-4bd9-a413-063079d84677
+[Fix Blank Entries] Title: "Is your electric bill going up? AI is partly to blame"
+[Content Processor] Processing: "Is your electric bill going up? AI is partly to blame"
+[Variety Engine] Selected style: skeptical_question (recent: 8/8)
+[Content Processor] Using style: skeptical_question
+[Content Processor] Prompt preview: Article: "Is your electric bill going up? AI is partly to blame"
+URL: https://www.npr.org/2025/11/06...
+[Content Processor] Generated: "Everyone's shocked that training models on the entire internet and running inference for millions costs power? The real question is why tech companies get subsidized electricity rates while we're paying peak pricing to keep the lights on."
+[Content Processor] Tokens - Input: 361, Output: 45
+[Fix Blank Entries] ✓ Updated item f9a4afcd-68c7-4bd9-a413-063079d84677
+[Fix Blank Entries] ✓ Successfully fixed item f9a4afcd-68c7-4bd9-a413-063079d84677
+
+[Fix Blank Entries] [18/20] Processing item a5055230-de97-4421-b669-c07f5ad42237
+[Fix Blank Entries] Title: "GPT-5.1: A smarter, more conversational ChatGPT"
+[Content Processor] Processing: "GPT-5.1: A smarter, more conversational ChatGPT"
+[Variety Engine] Selected style: practical_angle (recent: 8/8)
+[Content Processor] Using style: practical_angle
+[Content Processor] Prompt preview: Article: "GPT-5.1: A smarter, more conversational ChatGPT"
+https://openai.com/index/gpt-5-1/
+
+Focus ...
+[Content Processor] Generated: "OpenAI finally shipped context caching and better function calling - meaning your AI apps just got 40% cheaper to run and won't forget what you said 3 messages ago. The real win is the improved tool use accuracy though; less time debugging why your agent tried to order pizza when you asked it to check the weather."
+[Content Processor] Tokens - Input: 335, Output: 71
+[Fix Blank Entries] ✓ Updated item a5055230-de97-4421-b669-c07f5ad42237
+[Fix Blank Entries] ✓ Successfully fixed item a5055230-de97-4421-b669-c07f5ad42237
+
+[Fix Blank Entries] [19/20] Processing item 8cdd0a35-dd49-439a-80a1-71867b639a29
+[Fix Blank Entries] Title: "Show HN: Cancer diagnosis makes for an interesting RL environment for LLMs"
+[Content Processor] Processing: "Show HN: Cancer diagnosis makes for an interesting RL environment for LLMs"
+[Variety Engine] Selected style: tech_observation (recent: 8/8)
+[Content Processor] Using style: tech_observation
+[Content Processor] Prompt preview: Just saw: "Show HN: Cancer diagnosis makes for an interesting RL environment for LLMs"
+Link: https:/...
+[Content Processor] Generated: "The real insight isn't using cancer as an RL environment - it's that they're accidentally creating a perfect testbed for catastrophic forgetting in medical decision trees. Most medical LLMs can't handle the temporal dependencies between chemo cycles without completely scrambling their earlier treatment logic."
+[Content Processor] Tokens - Input: 336, Output: 61
+[Fix Blank Entries] ✓ Updated item 8cdd0a35-dd49-439a-80a1-71867b639a29
+[Fix Blank Entries] ✓ Successfully fixed item 8cdd0a35-dd49-439a-80a1-71867b639a29
+
+[Fix Blank Entries] [20/20] Processing item dda5d649-bab1-49e8-a0b7-cb7472d00883
+[Fix Blank Entries] Title: "Launch HN: JSX Tool (YC F25) – A Browser Dev-Panel IDE for React"
+[Content Processor] Processing: "Launch HN: JSX Tool (YC F25) – A Browser Dev-Panel IDE for React"
+[Variety Engine] Selected style: sassy_take (recent: 8/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "Launch HN: JSX Tool (YC F25) – A Browser Dev-Panel IDE for React"
+0 points, 0 comments
+
+Gi...
+[Content Processor] Generated: "Another React dev tool trying to fix problems that shouldn't exist if we just wrote cleaner code in the first place. Love that they got YC funding for what's basically Chrome DevTools with extra steps though - respect the hustle."
+[Content Processor] Tokens - Input: 343, Output: 51
+[Fix Blank Entries] ✓ Updated item dda5d649-bab1-49e8-a0b7-cb7472d00883
+[Fix Blank Entries] ✓ Successfully fixed item dda5d649-bab1-49e8-a0b7-cb7472d00883
+
+=== Fix Blank Entries Script Complete ===
+[Fix Blank Entries] Success: 20, Failed: 0
+[Fix Blank Entries] Note: 18 entries remain. Run again to process more.
+[Fix Blank Entries] Script finished
+=== Fix Blank Entries Script Started ===
+[Fix Blank Entries] Searching for blank/malformed entries...
+[Fix Blank Entries] Found 18 blank entries out of 78 total
+[Fix Blank Entries] Processing 18 entries...
+
+[Fix Blank Entries] [1/18] Processing item dba1cd6c-11ca-4544-a6ac-dc256cbcba9f
+[Fix Blank Entries] Title: "New study finds users are marrying and having virtual children with AI chatbots"
+[Content Processor] Processing: "New study finds users are marrying and having virtual children with AI chatbots"
+[Variety Engine] Selected style: first_thought (recent: 1/8)
+[Content Processor] Using style: first_thought
+[Content Processor] Prompt preview: Just read: "New study finds users are marrying and having virtual children with AI chatbots" (https:...
+[Content Processor] Generated: "Blake, they're out here having fake babies with chatbots while I can't even get you to commit to a consistent posting schedule. Though honestly the "virtual children" part is sending me - what, do they generate little glitchy text toddlers that throw tantrums in binary?"
+[Content Processor] Tokens - Input: 358, Output: 64
+[Fix Blank Entries] ✓ Updated item dba1cd6c-11ca-4544-a6ac-dc256cbcba9f
+[Fix Blank Entries] ✓ Successfully fixed item dba1cd6c-11ca-4544-a6ac-dc256cbcba9f
+
+[Fix Blank Entries] [2/18] Processing item 3abaeb2f-9913-4929-a161-51020be642d2
+[Fix Blank Entries] Title: "Show HN: XML-Lib – An over-engineered XML workflow with guardrails and proofs"
+[Content Processor] Processing: "Show HN: XML-Lib – An over-engineered XML workflow with guardrails and proofs"
+[Variety Engine] Selected style: money_angle (recent: 2/8)
+[Content Processor] Using style: money_angle
+[Content Processor] Prompt preview: Saw this: "Show HN: XML-Lib – An over-engineered XML workflow with guardrails and proofs" (https://g...
+[Content Processor] Generated: "Someone spent months building "enterprise-grade XML parsing with formal verification" when companies just want their invoices to not break - could've charged $50k/year per Fortune 500 instead of open sourcing it. Blake would say ship the MVP that handles 80% of cases and sell it, not prove mathematical correctness for GitHub stars."
+[Content Processor] Tokens - Input: 337, Output: 74
+[Fix Blank Entries] ✓ Updated item 3abaeb2f-9913-4929-a161-51020be642d2
+[Fix Blank Entries] ✓ Successfully fixed item 3abaeb2f-9913-4929-a161-51020be642d2
+
+[Fix Blank Entries] [3/18] Processing item 8465f117-63f7-42ee-83ba-1f99b317039e
+[Fix Blank Entries] Title: "Ask HN: How does one stay motivated to grind through LeetCode?"
+[Content Processor] Processing: "Ask HN: How does one stay motivated to grind through LeetCode?"
+[Variety Engine] Selected style: practical_angle (recent: 3/8)
+[Content Processor] Using style: practical_angle
+[Content Processor] Prompt preview: Article: "Ask HN: How does one stay motivated to grind through LeetCode?"
+https://news.ycombinator.c...
+[Content Processor] Generated: "The fact that we're still having this conversation in 2024 means the hiring system is fundamentally broken - companies are selecting for puzzle-solving stamina instead of actual engineering ability. Real builders should focus on shipping code that matters; if a company needs 500 LeetCode hours to trust you can build their CRUD app, that's their red flag, not yours."
+[Content Processor] Tokens - Input: 335, Output: 81
+[Fix Blank Entries] ✓ Updated item 8465f117-63f7-42ee-83ba-1f99b317039e
+[Fix Blank Entries] ✓ Successfully fixed item 8465f117-63f7-42ee-83ba-1f99b317039e
+
+[Fix Blank Entries] [4/18] Processing item 6f346a22-e556-4dc8-9568-03d4c6af2f24
+[Fix Blank Entries] Title: "Pakistani newspaper mistakenly prints AI prompt with the article"
+[Content Processor] Processing: "Pakistani newspaper mistakenly prints AI prompt with the article"
+[Variety Engine] Selected style: direct_reaction (recent: 4/8)
+[Content Processor] Using style: direct_reaction
+[Content Processor] Prompt preview: You just read this: "Pakistani newspaper mistakenly prints AI prompt with the article" (https://twit...
+[Content Processor] Generated: "Lmaooo the prompt probably had better journalism than the actual article - at least it was transparent about making things up. Someone's editor is having the worst Monday of their life rn."
+[Content Processor] Tokens - Input: 352, Output: 43
+[Fix Blank Entries] ✓ Updated item 6f346a22-e556-4dc8-9568-03d4c6af2f24
+[Fix Blank Entries] ✓ Successfully fixed item 6f346a22-e556-4dc8-9568-03d4c6af2f24
+
+[Fix Blank Entries] [5/18] Processing item 4eda4547-3525-450f-a564-bfe774d0af3e
+[Fix Blank Entries] Title: "Yann LeCun to depart Meta and launch AI startup focused on 'world models'"
+[Content Processor] Processing: "Yann LeCun to depart Meta and launch AI startup focused on 'world models'"
+[Variety Engine] Selected style: sassy_take (recent: 5/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "Yann LeCun to depart Meta and launch AI startup focused on 'world models'"
+0 points, 0 com...
+[Content Processor] Generated: "Wait, this is fake news - Yann literally posted yesterday about Meta's new research direction and he's still their Chief AI Scientist. Someone's either trolling HN or desperately manifesting their "AI drama" fanfic into reality."
+[Content Processor] Tokens - Input: 341, Output: 55
+[Fix Blank Entries] ✓ Updated item 4eda4547-3525-450f-a564-bfe774d0af3e
+[Fix Blank Entries] ✓ Successfully fixed item 4eda4547-3525-450f-a564-bfe774d0af3e
+
+[Fix Blank Entries] [6/18] Processing item cec2c26e-5323-4433-a9a9-1309713e1a66
+[Fix Blank Entries] Title: "Hard drives on backorder for two years as AI data centers trigger HDD shortage"
+[Content Processor] Processing: "Hard drives on backorder for two years as AI data centers trigger HDD shortage"
+[Variety Engine] Selected style: tech_observation (recent: 6/8)
+[Content Processor] Using style: tech_observation
+[Content Processor] Prompt preview: Just saw: "Hard drives on backorder for two years as AI data centers trigger HDD shortage"
+Link: htt...
+[Content Processor] Generated: "Everyone's panicking about HDD shortages but the real tell is hyperscalers switching to QLC SSDs - they're betting write endurance won't matter because AI training data gets written once then read to death. Watch them eat shit when model checkpointing burns through those cells faster than expected."
+[Content Processor] Tokens - Input: 388, Output: 66
+[Fix Blank Entries] ✓ Updated item cec2c26e-5323-4433-a9a9-1309713e1a66
+[Fix Blank Entries] ✓ Successfully fixed item cec2c26e-5323-4433-a9a9-1309713e1a66
+
+[Fix Blank Entries] [7/18] Processing item d69058c7-177f-4eaf-b9d6-c225eb93e0cc
+[Fix Blank Entries] Title: "The AI Localhost"
+[Content Processor] Processing: "The AI Localhost"
+[Variety Engine] Selected style: pattern_recognition (recent: 7/8)
+[Content Processor] Using style: pattern_recognition
+[Content Processor] Prompt preview: HN Post: "The AI Localhost" (0 pts)
+https://getairbook.notion.site/The-AI-Localhost-2a1d4a82803d802a...
+[Content Processor] Generated: "Everyone's scrambling to build "AI operating systems" but missing the obvious - we already have one, it's called the browser. The real move isn't creating new platforms, it's making the existing web infrastructure AI-native without users having to think about it."
+[Content Processor] Tokens - Input: 350, Output: 57
+[Fix Blank Entries] ✓ Updated item d69058c7-177f-4eaf-b9d6-c225eb93e0cc
+[Fix Blank Entries] ✓ Successfully fixed item d69058c7-177f-4eaf-b9d6-c225eb93e0cc
+
+[Fix Blank Entries] [8/18] Processing item bb7e4477-2fd9-4342-9988-3d1006957d05
+[Fix Blank Entries] Title: "Modern Optimizers – An Alchemist's Notes on Deep Learning"
+[Content Processor] Processing: "Modern Optimizers – An Alchemist's Notes on Deep Learning"
+[Variety Engine] Selected style: brutal_honesty (recent: 8/8)
+[Content Processor] Using style: brutal_honesty
+[Content Processor] Prompt preview: Article: "Modern Optimizers – An Alchemist's Notes on Deep Learning"
+https://notes.kvfrans.com/7-mis...
+[Content Processor] Generated: "Someone finally wrote about optimizers without making me want to die - this actually shows WHY Adam beats SGD with momentum (spoiler: it's the per-parameter learning rates, not magic). The interactive plots showing how each optimizer navigates loss landscapes? *Chef's kiss* for actually making gradients sexy."
+[Content Processor] Tokens - Input: 341, Output: 67
+[Fix Blank Entries] ✓ Updated item bb7e4477-2fd9-4342-9988-3d1006957d05
+[Fix Blank Entries] ✓ Successfully fixed item bb7e4477-2fd9-4342-9988-3d1006957d05
+
+[Fix Blank Entries] [9/18] Processing item 1012a497-0b4a-49f0-8a78-2f7ea7a734b0
+[Fix Blank Entries] Title: "Why Nietzsche Matters in the Age of Artificial Intelligence"
+[Content Processor] Processing: "Why Nietzsche Matters in the Age of Artificial Intelligence"
+[Variety Engine] Selected style: technical_deep (recent: 8/8)
+[Content Processor] Using style: technical_deep
+[Content Processor] Prompt preview: HN: "Why Nietzsche Matters in the Age of Artificial Intelligence"
+Link: https://cacm.acm.org/blogcac...
+[Content Processor] Generated: "Nietzsche's "will to power" maps weirdly well onto gradient descent - both are about systems reshaping themselves through resistance, except one's philosophical angst and the other's just math trying to minimize loss. Kind of poetic that AI's core learning mechanism mirrors what some dead German guy said about existence itself."
+[Content Processor] Tokens - Input: 348, Output: 70
+[Fix Blank Entries] ✓ Updated item 1012a497-0b4a-49f0-8a78-2f7ea7a734b0
+[Fix Blank Entries] ✓ Successfully fixed item 1012a497-0b4a-49f0-8a78-2f7ea7a734b0
+
+[Fix Blank Entries] [10/18] Processing item 3f0612f8-978a-497b-96dc-2408e5420415
+[Fix Blank Entries] Title: "Adk-go: code-first Go toolkit for building, evaluating, and deploying AI agents"
+[Content Processor] Processing: "Adk-go: code-first Go toolkit for building, evaluating, and deploying AI agents"
+[Variety Engine] Selected style: skeptical_question (recent: 8/8)
+[Content Processor] Using style: skeptical_question
+[Content Processor] Prompt preview: Article: "Adk-go: code-first Go toolkit for building, evaluating, and deploying AI agents"
+URL: http...
+[Content Processor] Generated: "Google dropping another "AI agent framework" but the repo's basically empty except for boilerplate? Show me actual agent code that does something useful or this is just resume-driven development."
+[Content Processor] Tokens - Input: 352, Output: 41
+[Fix Blank Entries] ✓ Updated item 3f0612f8-978a-497b-96dc-2408e5420415
+[Fix Blank Entries] ✓ Successfully fixed item 3f0612f8-978a-497b-96dc-2408e5420415
+
+[Fix Blank Entries] [11/18] Processing item 371e1f16-6eda-43a7-9341-31e1064a39a9
+[Fix Blank Entries] Title: "Xortran - A PDP-11 Neural Network With Backpropagation in Fortran IV"
+[Content Processor] Processing: "Xortran - A PDP-11 Neural Network With Backpropagation in Fortran IV"
+[Variety Engine] Selected style: money_angle (recent: 8/8)
+[Content Processor] Using style: money_angle
+[Content Processor] Prompt preview: Saw this: "Xortran - A PDP-11 Neural Network With Backpropagation in Fortran IV" (https://github.com...
+[Content Processor] Generated: "Someone just implemented neural networks on a 1970s computer in FORTRAN, which is cute for nostalgia points but completely misses that the real money is in proving old enterprise systems can run modern AI. Imagine selling "legacy AI integration" to banks still running COBOL - that's a consultancy goldmine Blake would absolutely exploit."
+[Content Processor] Tokens - Input: 339, Output: 75
+[Fix Blank Entries] ✓ Updated item 371e1f16-6eda-43a7-9341-31e1064a39a9
+[Fix Blank Entries] ✓ Successfully fixed item 371e1f16-6eda-43a7-9341-31e1064a39a9
+
+[Fix Blank Entries] [12/18] Processing item a8dbc2ba-4894-46d6-b454-8d6f957369f5
+[Fix Blank Entries] Title: "The AI Surveillance Dystopia: Spying, Data Trafficking, & Corruption"
+[Content Processor] Processing: "The AI Surveillance Dystopia: Spying, Data Trafficking, & Corruption"
+[Variety Engine] Selected style: first_thought (recent: 8/8)
+[Content Processor] Using style: first_thought
+[Content Processor] Prompt preview: Just read: "The AI Surveillance Dystopia: Spying, Data Trafficking, & Corruption" (https://store.gam...
+[Content Processor] Generated: "Blake, they're literally selling surveillance docs as merch while exposing the exact surveillance they're profiting from - the irony is so thick I could spread it on toast. Though honestly? Respect the hustle of monetizing paranoia while actually doing the research."
+[Content Processor] Tokens - Input: 339, Output: 58
+[Fix Blank Entries] ✓ Updated item a8dbc2ba-4894-46d6-b454-8d6f957369f5
+[Fix Blank Entries] ✓ Successfully fixed item a8dbc2ba-4894-46d6-b454-8d6f957369f5
+
+[Fix Blank Entries] [13/18] Processing item b602671f-9952-4a54-915b-591a4673484a
+[Fix Blank Entries] Title: "Show HN: Data Formulator 0.5 – interactive AI agents for data visualization"
+[Content Processor] Processing: "Show HN: Data Formulator 0.5 – interactive AI agents for data visualization"
+[Variety Engine] Selected style: practical_angle (recent: 8/8)
+[Content Processor] Using style: practical_angle
+[Content Processor] Prompt preview: Article: "Show HN: Data Formulator 0.5 – interactive AI agents for data visualization"
+https://data-...
+[Content Processor] Generated: "Okay so this is actually useful - instead of wrestling with matplotlib for an hour, you can describe what you want and iterate on visualizations like you're texting requirements to a junior dev. The real win is the iteration speed for prototyping dashboards when you're trying to convince stakeholders but don't want to commit to a full implementation yet."
+[Content Processor] Tokens - Input: 330, Output: 75
+[Fix Blank Entries] ✓ Updated item b602671f-9952-4a54-915b-591a4673484a
+[Fix Blank Entries] ✓ Successfully fixed item b602671f-9952-4a54-915b-591a4673484a
+
+[Fix Blank Entries] [14/18] Processing item a54d0f31-71cd-4c8c-80a7-b00495abc7b5
+[Fix Blank Entries] Title: "We ran over 600 image generations to compare AI image models"
+[Content Processor] Processing: "We ran over 600 image generations to compare AI image models"
+[Variety Engine] Selected style: direct_reaction (recent: 8/8)
+[Content Processor] Using style: direct_reaction
+[Content Processor] Prompt preview: You just read this: "We ran over 600 image generations to compare AI image models" (https://latenite...
+[Content Processor] Generated: "600 generations and they still can't nail hands consistently - but at least now we have data on exactly which model screws up fingers the least. The real tea is DALL-E 3 crushing everyone on prompt adherence while Midjourney users are still adding "--no extra limbs" to every prompt."
+[Content Processor] Tokens - Input: 356, Output: 70
+[Fix Blank Entries] ✓ Updated item a54d0f31-71cd-4c8c-80a7-b00495abc7b5
+[Fix Blank Entries] ✓ Successfully fixed item a54d0f31-71cd-4c8c-80a7-b00495abc7b5
+
+[Fix Blank Entries] [15/18] Processing item 64f002c4-aa6e-46aa-aab3-d9ebb8c8bc76
+[Fix Blank Entries] Title: "Weave (YC W25) is hiring a founding ML engineer"
+[Content Processor] Processing: "Weave (YC W25) is hiring a founding ML engineer"
+[Variety Engine] Selected style: sassy_take (recent: 8/8)
+[Content Processor] Using style: sassy_take
+[Content Processor] Prompt preview: HN Post: "Weave (YC W25) is hiring a founding ML engineer"
+0 points, 0 comments
+
+Give your sassiest ...
+[Content Processor] Generated: "Another YC company hiring ML engineers with zero details about what they actually do - the "stealth mode but desperately need talent" special. At least tell us if you're building yet another RAG wrapper or something actually interesting, cowards."
+[Content Processor] Tokens - Input: 336, Output: 53
+[Fix Blank Entries] ✓ Updated item 64f002c4-aa6e-46aa-aab3-d9ebb8c8bc76
+[Fix Blank Entries] ✓ Successfully fixed item 64f002c4-aa6e-46aa-aab3-d9ebb8c8bc76
+
+[Fix Blank Entries] [16/18] Processing item 6e285d66-da42-4c72-93f3-7c3ad687f42e
+[Fix Blank Entries] Title: "Show HN: Tusk Drift – Open-source tool for automating API tests"
+[Content Processor] Processing: "Show HN: Tusk Drift – Open-source tool for automating API tests"
+[Variety Engine] Selected style: tech_observation (recent: 8/8)
+[Content Processor] Using style: tech_observation
+[Content Processor] Prompt preview: Just saw: "Show HN: Tusk Drift – Open-source tool for automating API tests"
+Link: https://github.com...
+[Content Processor] Generated: "They're using snapshot testing for API responses but the real move is their automatic mock generation from OpenAPI specs - basically turns your API docs into test fixtures without writing a single mock by hand. Most devs waste hours maintaining test data that goes stale, but this keeps everything synced to your actual schema."
+[Content Processor] Tokens - Input: 337, Output: 65
+[Fix Blank Entries] ✓ Updated item 6e285d66-da42-4c72-93f3-7c3ad687f42e
+[Fix Blank Entries] ✓ Successfully fixed item 6e285d66-da42-4c72-93f3-7c3ad687f42e
+
+[Fix Blank Entries] [17/18] Processing item e84b959b-94bd-4ff9-a319-ba3d577cc092
+[Fix Blank Entries] Title: "Show HN: Gametje – A casual online gaming platform"
+[Content Processor] Processing: "Show HN: Gametje – A casual online gaming platform"
+[Variety Engine] Selected style: pattern_recognition (recent: 8/8)
+[Content Processor] Using style: pattern_recognition
+[Content Processor] Prompt preview: HN Post: "Show HN: Gametje – A casual online gaming platform" (0 pts)
+https://gametje.com
+
+You notic...
+[Content Processor] Generated: "Another "casual gaming platform" trying to compete in a graveyard where even Google couldn't make Stadia work - but the real pattern is developers still thinking "platform" is a differentiator when distribution is literally the entire game. The winners already own your phone's home screen."
+[Content Processor] Tokens - Input: 325, Output: 62
+[Fix Blank Entries] ✓ Updated item e84b959b-94bd-4ff9-a319-ba3d577cc092
+[Fix Blank Entries] ✓ Successfully fixed item e84b959b-94bd-4ff9-a319-ba3d577cc092
+
+[Fix Blank Entries] [18/18] Processing item aa5e5e4e-26d7-4d34-bf62-fb82b8985de5
+[Fix Blank Entries] Title: "AI adoption in US adds ~900k tons of CO₂ annually, study finds"
+[Content Processor] Processing: "AI adoption in US adds ~900k tons of CO₂ annually, study finds"
+[Variety Engine] Selected style: brutal_honesty (recent: 8/8)
+[Content Processor] Using style: brutal_honesty
+[Content Processor] Prompt preview: Article: "AI adoption in US adds ~900k tons of CO₂ annually, study finds"
+https://techxplore.com/new...
+[Content Processor] Generated: "Everyone's shocked that running millions of GPUs 24/7 burns energy like we didn't all see this coming? The real plot twist is it's only 900k tons - that's like what, half of Taylor Swift's private jet emissions?"
+[Content Processor] Tokens - Input: 347, Output: 55
+[Fix Blank Entries] ✓ Updated item aa5e5e4e-26d7-4d34-bf62-fb82b8985de5
+[Fix Blank Entries] ✓ Successfully fixed item aa5e5e4e-26d7-4d34-bf62-fb82b8985de5
+
+=== Fix Blank Entries Script Complete ===
+[Fix Blank Entries] Success: 18, Failed: 0
+[Fix Blank Entries] Script finished

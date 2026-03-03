@@ -1,0 +1,13 @@
+# Exclude node_modules except our workspace packages
+node_modules
+!node_modules/@mayahq
+
+# Don't ignore built files
+!../packages/*/dist
+!../packages/*/build
+
+# Common development files
+.git
+.idea
+.vscode
+*.log 

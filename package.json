@@ -1,0 +1,36 @@
+{
+  "name": "mayahq",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "website",
+    "mobile"
+  ],
+  "packageManager": "yarn@1.22.19",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7",
+    "patch-package": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "turbo": "^2.5.3",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "resolutions": {
+    "@langchain/core": "^0.2.21",
+    "react-native": "0.74.5",
+    "@supabase/supabase-js": "^2.39.7",
+    "entities": "~2.2.0"
+  }
+}

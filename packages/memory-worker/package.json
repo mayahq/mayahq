@@ -1,0 +1,50 @@
+{
+  "name": "@mayahq/memory-worker",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "NODE_ENV=development ts-node -r dotenv/config src/index.ts",
+    "build": "tsc -b",
+    "start": "node env-check.js && node dist/index.js",
+    "check-env": "node env-check.js",
+    "lint": "eslint src --ext .ts,.js",
+    "test": "jest --passWithNoTests",
+    "test-core-fact": "NODE_ENV=development ts-node -r dotenv/config src/test-core-fact.ts",
+    "reprocess-stalled": "node manual-reprocess.js",
+    "setup-tts": "node scripts/setup-tts-storage.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.16.0",
+    "@google/genai": "^1.37.0",
+    "@langchain/anthropic": "^0.1.16",
+    "@langchain/cohere": "^0.3.1",
+    "@langchain/community": "^0.2.0",
+    "@langchain/core": "^0.3.12",
+    "@langchain/openai": "^0.2.0",
+    "@mayahq/supabase-client": "*",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "@supabase/supabase-js": "^2.46.1",
+    "axios": "^1.6.0",
+    "node-html-parser": "^6.1.13",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "langchain": "^0.2.0",
+    "limiter": "^2.1.0",
+    "node-cron": "^4.2.1",
+    "uuid": "^11.0.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "@types/node-cron": "^3.0.11",
+    "@types/uuid": "^9.0.8",
+    "eslint": "^8.57.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

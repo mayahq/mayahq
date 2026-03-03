@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="64" fill="#E2E8F0"/>
+  <!-- User icon -->
+  <path d="M64 64C71.732 64 78 57.732 78 50C78 42.268 71.732 36 64 36C56.268 36 50 42.268 50 50C50 57.732 56.268 64 64 64ZM64 71C52.668 71 30 76.684 30 88V92C30 94.208 31.792 96 34 96H94C96.208 96 98 94.208 98 92V88C98 76.684 75.332 71 64 71Z" fill="#94A3B8"/>
+</svg> 

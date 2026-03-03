@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background hexagon -->
+  <path 
+    d="M16 2L4 9v14l12 7 12-7V9L16 2z"
+    fill="#000000"
+    stroke="#00FFFF"
+    stroke-width="1"
+  />
+  
+  <!-- Glitch effect lines -->
+  <path
+    d="M10 12L22 20"
+    stroke="#FF00FF"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+  
+  <!-- Tech circle -->
+  <circle
+    cx="16"
+    cy="16"
+    r="4"
+    fill="none"
+    stroke="#9900FF"
+    stroke-width="1.5"
+  />
+  
+  <!-- Digital dots -->
+  <circle cx="16" cy="12" r="1" fill="#00FFFF" />
+  <circle cx="16" cy="20" r="1" fill="#FF00FF" />
+</svg> 

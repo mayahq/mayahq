@@ -1,0 +1,45 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "build/**"],
+      "env": [
+        "SUPABASE_URL",
+        "SUPABASE_SERVICE_ROLE_KEY",
+        "SUPABASE_ANON_KEY",
+        "OPENAI_API_KEY",
+        "OPENAI_MODEL",
+        "EMBEDDING_MODEL",
+        "ANTHROPIC_API_KEY",
+        "PRIMARY_LLM_PROVIDER",
+        "ELEVEN_LABS_API_KEY",
+        "ELEVEN_LABS_VOICE_ID",
+        "ENABLE_MEMORY",
+        "MAX_MEMORIES",
+        "WINDOW_SIZE",
+        "TEMPERATURE",
+        "MAX_RETRIES",
+        "USE_EXPONENTIAL_BACKOFF",
+        "TRACK_PERFORMANCE",
+        "FALLBACK_STRATEGY",
+        "COHERE_API_KEY",
+        "OLLAMA_BASE_URL",
+        "OLLAMA_MODEL",
+        "XAI_API_KEY"
+      ]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    }
+  }
+} 

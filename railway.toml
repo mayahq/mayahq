@@ -1,0 +1,9 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+# Command is handled by Dockerfile CMD
+
+[service]
+internalPort = 3002
